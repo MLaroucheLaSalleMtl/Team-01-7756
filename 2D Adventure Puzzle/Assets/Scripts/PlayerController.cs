@@ -6,8 +6,11 @@ public class PlayerController : MonoBehaviour
 {
 
     [SerializeField] float characterSpeed = 5.0f;
+    [SerializeField] float jumpPower = 5.0f;
     [SerializeField] float localScale = 5.0f;
+    
     private Animator myAnimator;
+    public bool onGround = true;
     public Rigidbody2D rigidbody;
 
     // Start is called before the first frame update
@@ -22,7 +25,11 @@ public class PlayerController : MonoBehaviour
     {
         //Function to move the player
         MainMovement();
-
+        if (onGround)
+        {
+            MainJump();
+        }
+       
 
     }
 
@@ -50,7 +57,16 @@ public class PlayerController : MonoBehaviour
         }
         //Value of the animator
         myAnimator.SetFloat("Speed", Mathf.Abs(rigidbody.velocity.x));
+        myAnimator.SetBool("onGround", onGround);
     }
 
+    private void MainJump()
+    {
+        //Moment the key is press
+        if (Input.GetButtonDown("Jump"))
+        {
+            rigidbody.velocity = new Vector2(rigidbody.velocity.x, jumpPower);
+        }
+    }
 
 }

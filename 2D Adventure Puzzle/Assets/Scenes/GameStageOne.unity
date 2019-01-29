@@ -396,7 +396,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterSpeed: 3
+  jumpPower: 5
   localScale: 5
+  onGround: 1
   rigidbody: {fileID: 1745615123}
 --- !u!50 &1745615123
 Rigidbody2D:
@@ -414,7 +416,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: cfef0ac91554bd944b48f0e292782d35, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
