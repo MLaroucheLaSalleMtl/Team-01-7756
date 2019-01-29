@@ -34,7 +34,7 @@ public class PlayerController : MonoBehaviour
             MainJump();
         }
 
-        //Check if the player is on the ground
+        //Check if the player is on the ground with a circle
         onGround = Physics2D.OverlapCircle(groundCheck.position, groundRadius, currentLayer);
 
     }
