@@ -8,7 +8,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float characterSpeed = 5.0f;
     [SerializeField] float jumpPower = 5.0f;
     [SerializeField] float localScale = 5.0f;
-    
+
+    public Transform groundCheck;
+    public float groundRadius;
+    public LayerMask currentLayer;
+
     private Animator myAnimator;
     public bool onGround = true;
     public Rigidbody2D rigidbody;
@@ -29,7 +33,9 @@ public class PlayerController : MonoBehaviour
         {
             MainJump();
         }
-       
+
+        //Check if the player is on the ground
+        onGround = Physics2D.OverlapCircle(groundCheck.position, groundRadius, currentLayer);
 
     }
 
