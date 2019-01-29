@@ -9,18 +9,18 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float jumpPower = 5.0f;
     [SerializeField] float localScale = 5.0f;
 
-    public Transform groundCheck;
-    public float groundRadius;
-    public LayerMask currentLayer;
-
     private Animator myAnimator;
     public bool onGround = true;
     public Rigidbody2D rigidbody;
+    private Collider2D collider2D;
 
     // Start is called before the first frame update
     void Start()
     {
+        rigidbody.GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
+        collider2D = GetComponent<Collider2D>();
+
         
     }
 
@@ -29,13 +29,16 @@ public class PlayerController : MonoBehaviour
     {
         //Function to move the player
         MainMovement();
-        if (onGround)
-        {
-            MainJump();
-        }
 
-        //Check if the player is on the ground with a circle
-        onGround = Physics2D.OverlapCircle(groundCheck.position, groundRadius, currentLayer);
+        //Check if the player is on the ground
+        if (!collider2D.IsTouchingLayers(LayerMask.GetMask("Ground")))
+        {
+            return;
+        }
+            MainJump();
+        
+
+       
 
     }
 
