@@ -11,8 +11,8 @@ public class PlayerController : MonoBehaviour
 
     private Animator myAnimator;
     public bool onGround = true;
-    public Rigidbody2D rigidbody;
-    private Collider2D collider2D;
+    public new Rigidbody2D rigidbody;
+    private new Collider2D collider2D;
     public Vector2 respawnPosition;
 
     // Start is called before the first frame update
