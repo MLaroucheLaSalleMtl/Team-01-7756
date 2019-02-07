@@ -9,15 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 4638739ccde84a34284c08a1891555d9
   - enabled: 1
-    path: Assets/Scenes/RobTesting.unity
-    guid: 79513011546a49b4eacf1e021e386737
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 1
-    path: Assets/Scenes/RobTesting.unity
-    guid: 79513011546a49b4eacf1e021e386737
+    path: Assets/Scenes/LevelOne.unity
+    guid: 8208ae2c9509702bd9fe449e89a25b73
   - enabled: 1
     path: Assets/Scenes/LevelTwo.unity
-    guid: 11494ff875e606a439d3059aab65a53a
+    guid: 42b4136df417486438d47e992d4afcbd
+  - enabled: 1
+    path: Assets/Scenes/LevelThree.unity
+    guid: 50d050cce40e5b948ae23860ec47f89d
   m_configObjects: {}
