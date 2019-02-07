@@ -5,11 +5,11 @@ using UnityEngine;
 public class CameraFollow : MonoBehaviour
 {
     [SerializeField] GameObject target;
-    [SerializeField] float addDistanceCamera;
-    public float cameraSpeedMove;
+    [SerializeField] float addDistanceCamera = 3.0f;
+    public float cameraSpeedMove = 5.0f;
     private Vector3 targetPosition;
-    [SerializeField] float minClam;
-    [SerializeField] float maxClam;
+    [SerializeField] float minClam = -1.0f;
+    [SerializeField] float maxClam = 5.0f;
     [SerializeField] bool followTarget;
 
 
