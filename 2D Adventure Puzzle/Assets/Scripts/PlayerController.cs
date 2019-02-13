@@ -12,7 +12,8 @@ public class PlayerController : MonoBehaviour
     private Animator myAnimator;
     public bool onGround = true;
     public new Rigidbody2D rigidbody;
-    private new Collider2D collider2D;
+    private CapsuleCollider2D body;
+    private BoxCollider2D feet;
     public Vector2 respawnPosition;
 
     // Start is called before the first frame update
@@ -20,7 +21,8 @@ public class PlayerController : MonoBehaviour
     {
         rigidbody.GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
-        collider2D = GetComponent<Collider2D>();
+        body = GetComponent<CapsuleCollider2D>();
+        feet = GetComponent<BoxCollider2D>();
         respawnPosition = transform.position;
         
     }
@@ -32,7 +34,7 @@ public class PlayerController : MonoBehaviour
         MainMovement();
 
         //Check if the player is on the ground
-        if (!collider2D.IsTouchingLayers(LayerMask.GetMask("Ground")))
+        if (!feet.IsTouchingLayers(LayerMask.GetMask("Ground")))
         {
             //If not on ground does nothing
             return;
