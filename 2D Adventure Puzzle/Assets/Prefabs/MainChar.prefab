@@ -118,7 +118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterSpeed: 3
-  jumpPower: 5
+  jumpPower: 8
   localScale: 5
   onGround: 1
   rigidbody: {fileID: 1330293550844578132}
