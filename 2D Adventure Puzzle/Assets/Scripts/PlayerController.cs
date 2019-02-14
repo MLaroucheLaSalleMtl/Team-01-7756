@@ -95,6 +95,7 @@ public class PlayerController : MonoBehaviour
 
     public void Respawn()
     {
+        //This bring the death effect
         Instantiate(deathEffect, gameObject.transform.position, gameObject.transform.rotation);
     }
 

@@ -29,10 +29,12 @@ public class GameManager : MonoBehaviour
 
 
     //Function to add a star when player touch
-    public void GiveStar(int addStar)
+    public void GiveStar()
     {
-        starCount += addStar;
-        if(starCount > 3)
+        
+        starCount++;
+       
+        if (starCount > 3)
         {
             starCount = 3;
         }
