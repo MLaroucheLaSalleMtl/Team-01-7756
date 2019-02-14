@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float characterSpeed = 5.0f;
     [SerializeField] float jumpPower = 5.0f;
     [SerializeField] float localScale = 5.0f;
+    [SerializeField] GameObject deathEffect;
 
     private Animator myAnimator;
     public bool onGround = true;
@@ -77,6 +78,7 @@ public class PlayerController : MonoBehaviour
     {
         if(collision.gameObject.tag == "deathzone")
         {
+            Respawn();
             transform.position = respawnPosition;
         }
     }
@@ -89,5 +91,12 @@ public class PlayerController : MonoBehaviour
             rigidbody.velocity = new Vector2(rigidbody.velocity.x, jumpPower);
         }
     }
+
+
+    public void Respawn()
+    {
+        Instantiate(deathEffect, gameObject.transform.position, gameObject.transform.rotation);
+    }
+
 
 }

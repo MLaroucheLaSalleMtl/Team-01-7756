@@ -120,6 +120,8 @@ MonoBehaviour:
   characterSpeed: 3
   jumpPower: 8
   localScale: 5
+  deathEffect: {fileID: 5359624781662056453, guid: 81871919ce268a34a958aeb7c733ada3,
+    type: 3}
   onGround: 1
   rigidbody: {fileID: 1330293550844578132}
   respawnPosition: {x: 0, y: 0}
