@@ -5,10 +5,10 @@ using UnityEngine;
 public class CameraFollow : MonoBehaviour
 {
     [SerializeField] GameObject target;
-    [SerializeField] float addDistanceCamera = 3.0f;
+    [SerializeField] float addDistanceCamera = 2.0f;
     public float cameraSpeedMove = 5.0f;
     private Vector3 targetPosition;
-    [SerializeField] float minClam = -1.0f;
+    [SerializeField] float minClam = -3.0f;
     [SerializeField] float maxClam = 5.0f;
     [SerializeField] bool followTarget;
 
@@ -27,7 +27,7 @@ public class CameraFollow : MonoBehaviour
 
             //refer to the camera , set the value of the camera
             //x first follow player x , rest coordi is from the camera
-            targetPosition = new Vector3(target.transform.position.x, Mathf.Clamp(target.transform.position.y, minClam, maxClam), transform.position.z);
+            targetPosition = new Vector2(target.transform.position.x, Mathf.Clamp(target.transform.position.y, minClam, maxClam));
 
             if (target.transform.localScale.x > 0f)
             {

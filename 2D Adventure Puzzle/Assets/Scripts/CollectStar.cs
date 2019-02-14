@@ -5,6 +5,7 @@ using UnityEngine;
 public class CollectStar : MonoBehaviour
 {
     [SerializeField] GameManager gm;
+    [SerializeField] int addStart;
 
 
     // Start is called before the first frame update
@@ -24,8 +25,9 @@ public class CollectStar : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            gm.GiveStar(1);
-            gameObject.SetActive(false);
+            Destroy(gameObject);
+            gm.GiveStar();
+            
         }
     }
 

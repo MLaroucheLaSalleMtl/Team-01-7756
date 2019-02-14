@@ -16,6 +16,7 @@ public class DeleteGameObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Delete object -> Instantiate
         lifeTime += Time.deltaTime;
         if(lifeTime <= 0f)
         {
