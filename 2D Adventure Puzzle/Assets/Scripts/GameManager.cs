@@ -75,4 +75,11 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 0f;
         GameIsPaused = true;
     }
+
+    //for the level selection
+    public void LoadScene(int level)
+    {
+        Application.LoadLevel(level);
+    }
+
 }
