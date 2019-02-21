@@ -2,16 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CollectStar : MonoBehaviour
+public class ButtonOnOff : MonoBehaviour
 {
-    [SerializeField] GameManager gm;
-    [SerializeField] int addStart;
+    [SerializeField] GameObject obstacle;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        gm = FindObjectOfType<GameManager>();
+        
     }
 
     // Update is called once per frame
@@ -20,14 +19,19 @@ public class CollectStar : MonoBehaviour
         
     }
 
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "Player")
+        if(collision.gameObject.tag == "box")
         {
-            Destroy(gameObject);
-            gm.GiveStar();
-            
+            obstacle.SetActive(false);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "box")
+        {
+            obstacle.SetActive(true);
         }
     }
 
