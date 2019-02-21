@@ -17,4 +17,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LevelThree.unity
     guid: 50d050cce40e5b948ae23860ec47f89d
+  - enabled: 1
+    path: Assets/Scenes/HanhTestLevel1.unity
+    guid: 0564ed19d68550043938436ca0a880f5
+  - enabled: 1
+    path: Assets/Scenes/HanhTestLevel2.unity
+    guid: 43d5a0118201cb544a88215dd7c79f75
+  - enabled: 1
+    path: Assets/Scenes/HanhTestLevel3.unity
+    guid: 461e536b9994ac642ae63d41c7500d80
   m_configObjects: {}
