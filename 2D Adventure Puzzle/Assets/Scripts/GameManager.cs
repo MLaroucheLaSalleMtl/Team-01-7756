@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,6 +14,9 @@ public class GameManager : MonoBehaviour
     public Image star3;
     public Sprite star;
     public Sprite emptyStar;
+    public bool respawnCoActive;
+    [SerializeField] PlayerController player;
+    [SerializeField] GameObject deathEffect;
 
 
 
@@ -25,6 +29,29 @@ public class GameManager : MonoBehaviour
     {
         
     }
+
+
+
+    public void Respawn()
+    {
+        StartCoroutine("RespawnCo");      
+    }
+
+    //Have it own time to respawn
+    public IEnumerator RespawnCo()
+    {
+        //player off then death effect , wait 1.5sec then respawn
+        player.gameObject.SetActive(false);
+        Instantiate(deathEffect, player.gameObject.transform.position, player.gameObject.transform.rotation);
+        yield return new WaitForSeconds(1.5f);
+
+        
+        player.gameObject.SetActive(true);
+        player.gameObject.transform.position = player.respawnPosition;
+
+    }
+
+
 
 
 
@@ -79,7 +106,7 @@ public class GameManager : MonoBehaviour
     //for the level selection
     public void LoadScene(int level)
     {
-        Application.LoadLevel(level);
+        SceneManager.LoadScene(level);
     }
 
 }

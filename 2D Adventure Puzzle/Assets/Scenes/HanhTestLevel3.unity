@@ -165,7 +165,7 @@ PrefabInstance:
     - target: {fileID: 5022028173554956100, guid: fd6701f87736ebd4189fcf875818855f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -12.18
+      value: -11.52
       objectReference: {fileID: 0}
     - target: {fileID: 5022028173554956100, guid: fd6701f87736ebd4189fcf875818855f,
         type: 3}
@@ -217,10 +217,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5022028173554956098, guid: fd6701f87736ebd4189fcf875818855f,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 9d8c43d35feecee4f9609eb6bff4890f, type: 2}
     - target: {fileID: 5022028173554956101, guid: fd6701f87736ebd4189fcf875818855f,
         type: 3}
       propertyPath: m_Mass
-      value: 5
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 5022028173554956101, guid: fd6701f87736ebd4189fcf875818855f,
         type: 3}
@@ -240,7 +245,7 @@ PrefabInstance:
     - target: {fileID: 5022028173554956101, guid: fd6701f87736ebd4189fcf875818855f,
         type: 3}
       propertyPath: m_GravityScale
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd6701f87736ebd4189fcf875818855f, type: 3}
@@ -464,12 +469,18 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -14.1
       objectReference: {fileID: 0}
+    - target: {fileID: 2350274324676406740, guid: 5b991034d47c60e118983e9777368f55,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.5
+      objectReference: {fileID: 0}
     - target: {fileID: 747908929140232740, guid: 5b991034d47c60e118983e9777368f55,
         type: 3}
       propertyPath: jumpPower
       value: 6
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 989434004107955995, guid: 5b991034d47c60e118983e9777368f55, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5b991034d47c60e118983e9777368f55, type: 3}
 --- !u!1 &670074710
 GameObject:
@@ -1267,6 +1278,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1002308966}
+  - component: {fileID: 1002308965}
   m_Layer: 0
   m_Name: Spine
   m_TagString: Untagged
@@ -1274,6 +1286,32 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!61 &1002308965
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002308964}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 3.1626475, y: -2.1430385}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.464705, y: 0.35595894}
+  m_EdgeRadius: 0
 --- !u!4 &1002308966
 Transform:
   m_ObjectHideFlags: 0
