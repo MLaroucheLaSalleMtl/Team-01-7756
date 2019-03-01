@@ -26,8 +26,7 @@ public class CollectStar : MonoBehaviour
         if(collision.gameObject.tag == "Player")
         {
             Destroy(gameObject);
-            gm.GiveStar();
-            
+            gm.GiveStar();    
         }
     }
 
