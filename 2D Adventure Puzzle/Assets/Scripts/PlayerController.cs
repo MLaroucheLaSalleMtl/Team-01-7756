@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float jumpPower = 5.0f;
     [SerializeField] float localScale = 5.0f;
     [SerializeField] GameObject deathEffect;
+    [SerializeField] GameManager gm;
 
     private Animator myAnimator;
     public bool onGround = true;
@@ -16,6 +17,7 @@ public class PlayerController : MonoBehaviour
     private CapsuleCollider2D body;
     private BoxCollider2D feet;
     public Vector2 respawnPosition;
+    public bool respawnCoActive;
 
     // Start is called before the first frame update
     void Start()
@@ -78,8 +80,7 @@ public class PlayerController : MonoBehaviour
     {
         if(collision.gameObject.tag == "deathzone")
         {
-            Respawn();
-            transform.position = respawnPosition;
+            gm.Respawn();
         }
     }
 
@@ -92,12 +93,6 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-
-    public void Respawn()
-    {
-        //This bring the death effect
-        Instantiate(deathEffect, gameObject.transform.position, gameObject.transform.rotation);
-    }
 
 
 }
