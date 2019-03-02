@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
 {
     public GameObject optionMenu;
     public static bool GameIsPaused = true;
+    public GameObject loadingPanel;
     [SerializeField] int starCount = 0;
     public Image star1;
     public Image star2;
@@ -18,8 +19,6 @@ public class GameManager : MonoBehaviour
     [SerializeField] PlayerController player;
     [SerializeField] GameObject deathEffect;
 
-
-
     private void Start()
     {
         
@@ -29,8 +28,6 @@ public class GameManager : MonoBehaviour
     {
         
     }
-
-
 
     public void Respawn()
     {
@@ -44,21 +41,14 @@ public class GameManager : MonoBehaviour
         player.gameObject.SetActive(false);
         Instantiate(deathEffect, player.gameObject.transform.position, player.gameObject.transform.rotation);
         yield return new WaitForSeconds(1.5f);
-
         
         player.gameObject.SetActive(true);
         player.gameObject.transform.position = player.respawnPosition;
-
     }
-
-
-
-
 
     //Function to add a star when player touch
     public void GiveStar()
-    {
-        
+    {     
         starCount++;
        
         if (starCount > 3)
@@ -90,7 +80,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
-
     public void ExitGame()
     {
         Application.Quit();
@@ -106,6 +95,7 @@ public class GameManager : MonoBehaviour
     //for the level selection
     public void LoadScene(int level)
     {
+        loadingPanel.SetActive(true);
         SceneManager.LoadScene(level);
     }
 

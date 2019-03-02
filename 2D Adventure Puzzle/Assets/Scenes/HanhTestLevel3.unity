@@ -217,15 +217,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5022028173554956098, guid: fd6701f87736ebd4189fcf875818855f,
-        type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 6200000, guid: 9d8c43d35feecee4f9609eb6bff4890f, type: 2}
     - target: {fileID: 5022028173554956101, guid: fd6701f87736ebd4189fcf875818855f,
         type: 3}
       propertyPath: m_Mass
-      value: 15
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5022028173554956101, guid: fd6701f87736ebd4189fcf875818855f,
         type: 3}
@@ -240,13 +235,18 @@ PrefabInstance:
     - target: {fileID: 5022028173554956101, guid: fd6701f87736ebd4189fcf875818855f,
         type: 3}
       propertyPath: m_LinearDrag
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5022028173554956101, guid: fd6701f87736ebd4189fcf875818855f,
         type: 3}
       propertyPath: m_GravityScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5022028173554956098, guid: fd6701f87736ebd4189fcf875818855f,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 9d8c43d35feecee4f9609eb6bff4890f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd6701f87736ebd4189fcf875818855f, type: 3}
 --- !u!1 &203134431
@@ -478,6 +478,11 @@ PrefabInstance:
         type: 3}
       propertyPath: jumpPower
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 747908929140232741, guid: 5b991034d47c60e118983e9777368f55,
+        type: 3}
+      propertyPath: m_Mass
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 989434004107955995, guid: 5b991034d47c60e118983e9777368f55, type: 3}
