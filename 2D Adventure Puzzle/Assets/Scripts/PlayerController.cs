@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float localScale = 5.0f;
     [SerializeField] GameObject deathEffect;
     [SerializeField] GameManager gm;
+    public AudioSource jump;
 
     private Animator myAnimator;
     public bool onGround = true;
@@ -22,6 +23,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+       
         rigidbody.GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
         body = GetComponent<CapsuleCollider2D>();
@@ -43,9 +45,9 @@ public class PlayerController : MonoBehaviour
             return;
         }
             MainJump();
-        
+           
 
-       
+
 
     }
 
@@ -90,6 +92,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             rigidbody.velocity = new Vector2(rigidbody.velocity.x, jumpPower);
+            jump.Play();
         }
     }
 
