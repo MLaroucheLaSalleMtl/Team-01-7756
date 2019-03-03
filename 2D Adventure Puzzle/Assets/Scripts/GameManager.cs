@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public GameObject optionMenu;
+    public AudioSource deathSound;
     public static bool GameIsPaused = true;
     public GameObject loadingPanel;
     [SerializeField] int starCount = 0;
@@ -31,6 +32,7 @@ public class GameManager : MonoBehaviour
 
     public void Respawn()
     {
+        deathSound.Play();
         StartCoroutine("RespawnCo");      
     }
 

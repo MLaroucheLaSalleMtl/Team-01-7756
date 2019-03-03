@@ -10,7 +10,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float localScale = 5.0f;
     [SerializeField] GameObject deathEffect;
     [SerializeField] GameManager gm;
-    public AudioSource jump;
+    public AudioSource jumpSound;
+
 
     private Animator myAnimator;
     public bool onGround = true;
@@ -92,7 +93,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             rigidbody.velocity = new Vector2(rigidbody.velocity.x, jumpPower);
-            jump.Play();
+            jumpSound.Play();
         }
     }
 
