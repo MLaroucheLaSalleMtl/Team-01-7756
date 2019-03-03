@@ -6,6 +6,7 @@ public class CollectStar : MonoBehaviour
 {
     [SerializeField] GameManager gm;
     [SerializeField] int addStart;
+    [SerializeField] AudioSource starCollect;
 
 
     // Start is called before the first frame update
@@ -25,6 +26,7 @@ public class CollectStar : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
+            starCollect.Play();
             Destroy(gameObject);
             gm.GiveStar();
             
