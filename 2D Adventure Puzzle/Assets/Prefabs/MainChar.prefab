@@ -150,12 +150,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterSpeed: 3
-  jumpPower: 8
+  jumpPower: 6
   localScale: 5
   deathEffect: {fileID: 5359624781662056453, guid: 81871919ce268a34a958aeb7c733ada3,
     type: 3}
   gm: {fileID: 0}
-  jump: {fileID: 3675526735707660445}
+  jumpSound: {fileID: 3675526735707660445}
+  deathSound: {fileID: 0}
   onGround: 1
   rigidbody: {fileID: 1330293550844578132}
   respawnPosition: {x: 0, y: 0}
