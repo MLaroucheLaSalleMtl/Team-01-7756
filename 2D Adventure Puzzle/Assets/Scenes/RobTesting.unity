@@ -382,32 +382,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6174060018012567439}
   m_PrefabAsset: {fileID: 0}
---- !u!61 &507348425
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 507348423}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.015861299, y: -0.10459484}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.18, y: 0.23}
-    newSize: {x: 0.18, y: 0.23}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.09117622, y: 0.017006695}
-  m_EdgeRadius: 0
 --- !u!1 &697338912
 GameObject:
   m_ObjectHideFlags: 0
@@ -1185,15 +1159,25 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5353606421047018139, guid: bd0a306611837e247875183f10a30068,
+    - target: {fileID: 4612800233840792242, guid: bd0a306611837e247875183f10a30068,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.999
+      value: -5.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 9151173367956818049, guid: bd0a306611837e247875183f10a30068,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.256
       objectReference: {fileID: 0}
     - target: {fileID: 5353606420496529249, guid: bd0a306611837e247875183f10a30068,
         type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 5353606421047018139, guid: bd0a306611837e247875183f10a30068,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.999
       objectReference: {fileID: 0}
     - target: {fileID: 5353606420724795076, guid: bd0a306611837e247875183f10a30068,
         type: 3}
@@ -1209,16 +1193,6 @@ PrefabInstance:
         type: 3}
       propertyPath: addStart
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4612800233840792242, guid: bd0a306611837e247875183f10a30068,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -5.57
-      objectReference: {fileID: 0}
-    - target: {fileID: 9151173367956818049, guid: bd0a306611837e247875183f10a30068,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.256
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd0a306611837e247875183f10a30068, type: 3}
