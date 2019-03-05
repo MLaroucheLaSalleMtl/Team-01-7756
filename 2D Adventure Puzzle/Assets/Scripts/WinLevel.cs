@@ -22,12 +22,11 @@ public class WinLevel : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+
+    public void NextLevel()
     {
-        if (collision.gameObject.tag == "goal")
-        {
-            SceneManager.LoadScene(stageName);
-        }
+        SceneManager.LoadScene(stageName);
     }
+   
 
 }
