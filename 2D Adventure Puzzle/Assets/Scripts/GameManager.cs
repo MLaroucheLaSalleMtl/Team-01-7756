@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
     public void Respawn()
     {
         deathSound.Play();
-        StartCoroutine("RespawnCo");      
+        StartCoroutine("RespawnCo"); 
     }
 
     //Have it own time to respawn
