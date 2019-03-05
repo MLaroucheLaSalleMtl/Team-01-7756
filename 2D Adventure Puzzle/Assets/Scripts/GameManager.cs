@@ -101,4 +101,17 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(level);
     }
 
+    public void Resume()
+    {
+        Time.timeScale = 1f;
+    }
+    public void PauseIngame()
+    {
+        Time.timeScale = 0f;
+    }
+    public void Replay()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
 }
