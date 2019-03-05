@@ -26,4 +26,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HanhTestLevel3.unity
     guid: 461e536b9994ac642ae63d41c7500d80
+  - enabled: 1
+    path: Assets/Scenes/RobLevelOne.unity
+    guid: fbd3ab2405c99464bb952b49345c72f2
+  - enabled: 1
+    path: Assets/Scenes/RobLevelTwo.unity
+    guid: b226d7c052a9f0947a5e9edc0c85ce5e
   m_configObjects: {}
