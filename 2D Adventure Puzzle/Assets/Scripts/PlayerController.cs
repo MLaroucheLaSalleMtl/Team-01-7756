@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       
+        Time.timeScale = 1;
         rigidbody.GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
         body = GetComponent<CapsuleCollider2D>();
