@@ -87,12 +87,6 @@ public class GameManager : MonoBehaviour
         Application.Quit();
     }
 
-    public void Pause()
-    {
-        optionMenu.SetActive(true);
-        Time.timeScale = 0f;
-        GameIsPaused = true;
-    }
 
     //for the level selection
     public void LoadScene(int level)
