@@ -87,7 +87,6 @@ public class GameManager : MonoBehaviour
         Application.Quit();
     }
 
-
     //for the level selection
     public void LoadScene(int level)
     {
