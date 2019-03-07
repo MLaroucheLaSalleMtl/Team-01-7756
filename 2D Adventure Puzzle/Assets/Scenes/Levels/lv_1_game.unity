@@ -310,12 +310,12 @@ PrefabInstance:
     - target: {fileID: 1032897296966297803, guid: 277923c5313daa014a0c8502ad8c50a6,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -220
+      value: -205.3
       objectReference: {fileID: 0}
     - target: {fileID: 1032897296966297803, guid: 277923c5313daa014a0c8502ad8c50a6,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -90.7
+      value: -49.5
       objectReference: {fileID: 0}
     - target: {fileID: 1032897296966297803, guid: 277923c5313daa014a0c8502ad8c50a6,
         type: 3}
@@ -325,7 +325,7 @@ PrefabInstance:
     - target: {fileID: 1032897296966297803, guid: 277923c5313daa014a0c8502ad8c50a6,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 289.3
+      value: 162.4
       objectReference: {fileID: 0}
     - target: {fileID: 1032897296966297803, guid: 277923c5313daa014a0c8502ad8c50a6,
         type: 3}
@@ -360,11 +360,17 @@ PrefabInstance:
     - target: {fileID: 1032897295869287410, guid: 277923c5313daa014a0c8502ad8c50a6,
         type: 3}
       propertyPath: m_Text
-      value: 'Hello
-
-        A twinkle star seem to be missing
-
-        where can it be ?'
+      value: Remember to earn stars as you go!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1032897295869287410, guid: 277923c5313daa014a0c8502ad8c50a6,
+        type: 3}
+      propertyPath: m_FontData.m_BestFit
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1032897295869287409, guid: 277923c5313daa014a0c8502ad8c50a6,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 366.06
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 277923c5313daa014a0c8502ad8c50a6, type: 3}
@@ -1869,6 +1875,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5353606420496529249, guid: bd0a306611837e247875183f10a30068,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 5353606420496529249, guid: bd0a306611837e247875183f10a30068,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.55
+      objectReference: {fileID: 0}
     - target: {fileID: 4612800233840792242, guid: bd0a306611837e247875183f10a30068,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -1889,35 +1905,25 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 2.98
       objectReference: {fileID: 0}
-    - target: {fileID: 5353606420496529249, guid: bd0a306611837e247875183f10a30068,
+    - target: {fileID: 7815565005280487788, guid: bd0a306611837e247875183f10a30068,
         type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 6.26
-      objectReference: {fileID: 0}
-    - target: {fileID: 5353606420496529249, guid: bd0a306611837e247875183f10a30068,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.55
+      propertyPath: m_AnchoredPosition.y
+      value: 0.000061035156
       objectReference: {fileID: 0}
     - target: {fileID: 2118123278690172796, guid: bd0a306611837e247875183f10a30068,
         type: 3}
       propertyPath: m_ForceModuleActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7815565005280487788, guid: bd0a306611837e247875183f10a30068,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.000061035156
-      objectReference: {fileID: 0}
+    - target: {fileID: 437195973, guid: bd0a306611837e247875183f10a30068, type: 3}
+      propertyPath: panel
+      value: 
+      objectReference: {fileID: 537533664}
     - target: {fileID: 1032897295191429407, guid: bd0a306611837e247875183f10a30068,
         type: 3}
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 437195973, guid: bd0a306611837e247875183f10a30068, type: 3}
-      propertyPath: panel
-      value: 
-      objectReference: {fileID: 537533664}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd0a306611837e247875183f10a30068, type: 3}
 --- !u!224 &1636267834 stripped
