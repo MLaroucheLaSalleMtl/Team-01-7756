@@ -29,11 +29,11 @@ public class testmove : MonoBehaviour
         //Moving to the end point
         movingObject.transform.position = Vector2.MoveTowards(movingObject.transform.position, currentTarget, moveSpeed * Time.deltaTime);
 
-        if (movingObject.transform.position.x == endPoint.position.x)
+        if (movingObject.transform.position.y == endPoint.position.y)
         {
             currentTarget = startPoint.position;
         }
-        if (movingObject.transform.position.x == startPoint.position.x)
+        if (movingObject.transform.position.y == startPoint.position.y)
         {
             currentTarget = endPoint.position;
         }
