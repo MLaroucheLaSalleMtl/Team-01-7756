@@ -174,11 +174,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: CloseDoor
       objectReference: {fileID: 0}
-    - target: {fileID: 3631117992774304006, guid: c8db28a70bcb4a645a94a67a4d6b53ac,
-        type: 3}
-      propertyPath: panel
-      value: 
-      objectReference: {fileID: 540923348}
     - target: {fileID: 4473539189134539772, guid: c8db28a70bcb4a645a94a67a4d6b53ac,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -730,7 +725,7 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 1.2
       objectReference: {fileID: 0}
-    - target: {fileID: 5260516570965811064, guid: 6b847be9be2b6fb4a9061837530c6fd1,
+    - target: {fileID: 6595542222527692437, guid: 6b847be9be2b6fb4a9061837530c6fd1,
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.85
