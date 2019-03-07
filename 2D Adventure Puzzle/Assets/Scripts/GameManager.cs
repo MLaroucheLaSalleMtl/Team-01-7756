@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
 
 public class GameManager : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class GameManager : MonoBehaviour
     public GameObject loadingPanel;
     [SerializeField] int starCount = 0;
     public GameObject menuMain;
+    public GameObject menuMain2;
     public GameObject menuTitle;
     public GameObject menuO;
     public Image star1;
@@ -20,6 +22,7 @@ public class GameManager : MonoBehaviour
     public Sprite star;
     public Sprite emptyStar;
     public bool respawnCoActive;
+    public GameObject pauseScreen;
     [SerializeField] PlayerController player;
     [SerializeField] GameObject deathEffect;
 
@@ -31,6 +34,30 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
+        //To pause the game
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (Time.timeScale == 0f)
+            {
+                Resume();
+            }
+            else
+            {
+                PauseGame();
+            }
+        }
+    }
+
+    public void PauseGame()
+    {
+        Time.timeScale = 0;
+        pauseScreen.SetActive(true);
+    }
+
+    public void Resume()
+    {
+        Time.timeScale = 1.0f;
+        pauseScreen.SetActive(false);
         
     }
 
@@ -109,6 +136,7 @@ public class GameManager : MonoBehaviour
     public void Option()
     {
         menuMain.SetActive(false);
+        menuMain2.SetActive(false);
         menuTitle.SetActive(false);
         menuO.SetActive(true);
     }
@@ -116,6 +144,7 @@ public class GameManager : MonoBehaviour
     public void BackOption()
     {
         menuMain.SetActive(true);
+        menuMain2.SetActive(true);
         menuTitle.SetActive(true);
         menuO.SetActive(false);
     }
@@ -127,3 +156,6 @@ public class GameManager : MonoBehaviour
    
 
 }
+
+   
+
