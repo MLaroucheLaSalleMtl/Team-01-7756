@@ -120,5 +120,10 @@ public class GameManager : MonoBehaviour
         menuO.SetActive(false);
     }
 
+    public void ReloadStage()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+   
 
 }
