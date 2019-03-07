@@ -194,6 +194,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 2067288700}
+    - target: {fileID: 2118123278288727603, guid: bd0a306611837e247875183f10a30068,
+        type: 3}
+      propertyPath: pauseScreen
+      value: 
+      objectReference: {fileID: 1895523598}
     - target: {fileID: 2343353130079334772, guid: bd0a306611837e247875183f10a30068,
         type: 3}
       propertyPath: m_Color.r
@@ -220,6 +225,21 @@ PrefabInstance:
       value: 0.8836672
       objectReference: {fileID: 0}
     - target: {fileID: 3084229837145298087, guid: bd0a306611837e247875183f10a30068,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.047169805
+      objectReference: {fileID: 0}
+    - target: {fileID: 1455199637094485652, guid: bd0a306611837e247875183f10a30068,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1455199637094485652, guid: bd0a306611837e247875183f10a30068,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.8836672
+      objectReference: {fileID: 0}
+    - target: {fileID: 1455199637094485652, guid: bd0a306611837e247875183f10a30068,
         type: 3}
       propertyPath: m_Color.b
       value: 0.047169805
@@ -228,21 +248,6 @@ PrefabInstance:
       propertyPath: panel
       value: 
       objectReference: {fileID: 458673922}
-    - target: {fileID: 1455199637094485652, guid: bd0a306611837e247875183f10a30068,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1455199637094485652, guid: bd0a306611837e247875183f10a30068,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.8836672
-      objectReference: {fileID: 0}
-    - target: {fileID: 1455199637094485652, guid: bd0a306611837e247875183f10a30068,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.047169805
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd0a306611837e247875183f10a30068, type: 3}
 --- !u!224 &437195971 stripped
@@ -1074,6 +1079,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0179bbe788f923f44bbd39a332ab3e32, type: 3}
+--- !u!1 &1895523598 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6282531360577912655, guid: 0179bbe788f923f44bbd39a332ab3e32,
+    type: 3}
+  m_PrefabInstance: {fileID: 1860850624}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1987973603
 GameObject:
   m_ObjectHideFlags: 0
@@ -1254,6 +1265,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 3238796924561829027, guid: 5b991034d47c60e118983e9777368f55,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.1
+      objectReference: {fileID: 0}
     - target: {fileID: 1681542152623707672, guid: 5b991034d47c60e118983e9777368f55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1293,11 +1309,6 @@ PrefabInstance:
         type: 3}
       propertyPath: orthographic size
       value: 6.1377554
-      objectReference: {fileID: 0}
-    - target: {fileID: 3238796924561829027, guid: 5b991034d47c60e118983e9777368f55,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 6.1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 989434004107955995, guid: 5b991034d47c60e118983e9777368f55, type: 3}
@@ -8090,16 +8101,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5976131462035640917, guid: 9857e556ff260522fbaf5a85de60247d,
-        type: 3}
-      propertyPath: m_UsedByEffector
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5976131462035640938, guid: 9857e556ff260522fbaf5a85de60247d,
-        type: 3}
-      propertyPath: m_UsedByComposite
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5976131462035640938, guid: 9857e556ff260522fbaf5a85de60247d,
         type: 3}
       propertyPath: m_UsedByEffector
       value: 0
@@ -14939,6 +14940,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ChunkCullingBounds.y
       value: 0.13999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 5976131462035640938, guid: 9857e556ff260522fbaf5a85de60247d,
+        type: 3}
+      propertyPath: m_UsedByComposite
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5976131462035640938, guid: 9857e556ff260522fbaf5a85de60247d,
+        type: 3}
+      propertyPath: m_UsedByEffector
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5976131462035640916, guid: 9857e556ff260522fbaf5a85de60247d,
         type: 3}
