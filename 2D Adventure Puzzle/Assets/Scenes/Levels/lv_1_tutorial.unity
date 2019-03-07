@@ -857,7 +857,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stageName: lv_2_tutorial
-  panel: {fileID: 770841976}
 --- !u!1001 &394620043691532724
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1122,7 +1121,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 700417934, guid: 6b847be9be2b6fb4a9061837530c6fd1, type: 3}
       propertyPath: timer
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1046101709431577023, guid: 6b847be9be2b6fb4a9061837530c6fd1,
         type: 3}
