@@ -11,6 +11,9 @@ public class GameManager : MonoBehaviour
     public static bool GameIsPaused = true;
     public GameObject loadingPanel;
     [SerializeField] int starCount = 0;
+    public GameObject menuMain;
+    public GameObject menuTitle;
+    public GameObject menuO;
     public Image star1;
     public Image star2;
     public Image star3;
@@ -22,7 +25,8 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        
+        //menuMain.SetActive(true);
+        //menuTitle.SetActive(true);
     }
 
     private void Update()
@@ -94,17 +98,21 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(level);
     }
 
-    public void Resume()
+
+
+    public void Option()
     {
-        Time.timeScale = 1f;
+        menuMain.SetActive(false);
+        menuTitle.SetActive(false);
+        menuO.SetActive(true);
     }
-    public void PauseIngame()
+
+    public void BackOption()
     {
-        Time.timeScale = 0f;
+        menuMain.SetActive(true);
+        menuTitle.SetActive(true);
+        menuO.SetActive(false);
     }
-    public void Replay()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
+
 
 }
