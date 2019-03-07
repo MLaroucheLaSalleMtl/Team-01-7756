@@ -167,8 +167,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4473539189134539772}
-  - component: {fileID: 4473539189134539775}
   - component: {fileID: 4473539189134539773}
+  - component: {fileID: 3631117992774304006}
   m_Layer: 0
   m_Name: CloseDoor
   m_TagString: door
@@ -192,19 +192,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4473539189134539775
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4473539189134539774}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 173af4a817080b64690e6f6c8fd89abd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stageName: LevelTwo
 --- !u!61 &4473539189134539773
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -231,3 +218,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.7099571, y: 1.2452183}
   m_EdgeRadius: 0
+--- !u!114 &3631117992774304006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4473539189134539774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0829e3be23c7ba448507c183119f907, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panel: {fileID: 0}

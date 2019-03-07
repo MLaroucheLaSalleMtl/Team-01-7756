@@ -12,24 +12,27 @@ EditorBuildSettings:
     path: Assets/Scenes/LevelSelection.unity
     guid: 0265dd61089a3dc49b96764d5e8f776e
   - enabled: 1
-    path: Assets/Scenes/LevelTwo.unity
-    guid: 42b4136df417486438d47e992d4afcbd
-  - enabled: 1
-    path: Assets/Scenes/LevelThree.unity
+    path: Assets/Scenes/Levels/lv_1_tutorial.unity
     guid: 50d050cce40e5b948ae23860ec47f89d
   - enabled: 1
-    path: Assets/Scenes/HanhTestLevel1.unity
+    path: Assets/Scenes/Levels/lv_2_tutorial.unity
+    guid: 42b4136df417486438d47e992d4afcbd
+  - enabled: 1
+    path: Assets/Scenes/Levels/lv_1_game.unity
     guid: 0564ed19d68550043938436ca0a880f5
   - enabled: 1
-    path: Assets/Scenes/HanhTestLevel2.unity
+    path: Assets/Scenes/Levels/lv_2_game.unity
     guid: 43d5a0118201cb544a88215dd7c79f75
   - enabled: 1
-    path: Assets/Scenes/HanhTestLevel3.unity
-    guid: 461e536b9994ac642ae63d41c7500d80
-  - enabled: 1
-    path: Assets/Scenes/RobLevelOne.unity
+    path: Assets/Scenes/Levels/lv_3_game.unity
     guid: fbd3ab2405c99464bb952b49345c72f2
-  - enabled: 1
-    path: Assets/Scenes/RobLevelTwo.unity
+  - enabled: 0
+    path: Assets/Scenes/Archives/HanhTestLevel3.unity
+    guid: 461e536b9994ac642ae63d41c7500d80
+  - enabled: 0
+    path: Assets/Scenes/Archives/RobLevelTwo.unity
     guid: b226d7c052a9f0947a5e9edc0c85ce5e
+  - enabled: 1
+    path: Assets/Scenes/Archives/RobTesting.unity
+    guid: 79513011546a49b4eacf1e021e386737
   m_configObjects: {}

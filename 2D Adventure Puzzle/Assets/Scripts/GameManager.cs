@@ -11,6 +11,9 @@ public class GameManager : MonoBehaviour
     public static bool GameIsPaused = true;
     public GameObject loadingPanel;
     [SerializeField] int starCount = 0;
+    public GameObject menuMain;
+    public GameObject menuTitle;
+    public GameObject menuO;
     public Image star1;
     public Image star2;
     public Image star3;
@@ -22,7 +25,8 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        
+        //menuMain.SetActive(true);
+        //menuTitle.SetActive(true);
     }
 
     private void Update()
@@ -33,7 +37,7 @@ public class GameManager : MonoBehaviour
     public void Respawn()
     {
         deathSound.Play();
-        StartCoroutine("RespawnCo");      
+        StartCoroutine("RespawnCo"); 
     }
 
     //Have it own time to respawn
@@ -100,5 +104,26 @@ public class GameManager : MonoBehaviour
         loadingPanel.SetActive(true);
         SceneManager.LoadScene(level);
     }
+
+
+    public void Option()
+    {
+        menuMain.SetActive(false);
+        menuTitle.SetActive(false);
+        menuO.SetActive(true);
+    }
+
+    public void BackOption()
+    {
+        menuMain.SetActive(true);
+        menuTitle.SetActive(true);
+        menuO.SetActive(false);
+    }
+
+    public void ReloadStage()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+   
 
 }

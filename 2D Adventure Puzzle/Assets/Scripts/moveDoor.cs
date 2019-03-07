@@ -1,19 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class WinLevel : MonoBehaviour
+public class moveDoor : MonoBehaviour
 {
 
-    [SerializeField] string stageName;
-    
+    public GameObject fakeDoor;
+    public GameObject realDoor;
 
 
     // Start is called before the first frame update
     void Start()
     {
-       
+        
     }
 
     // Update is called once per frame
@@ -21,12 +20,4 @@ public class WinLevel : MonoBehaviour
     {
         
     }
-
-
-    public void NextLevel()
-    {
-        SceneManager.LoadScene(stageName);
-    }
-   
-
 }
