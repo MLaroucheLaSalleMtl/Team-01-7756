@@ -6,7 +6,6 @@ public class InitiateHelper : MonoBehaviour
 {
 
     [SerializeField] GameObject panel;
-    [SerializeField] float timer = 7.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -17,8 +16,7 @@ public class InitiateHelper : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timer -= Time.deltaTime;
-        if(timer < 0) {
+        if(Input.anyKey) {
           panel.SetActive(false);
         }
     }

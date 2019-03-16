@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
     {
         //menuMain.SetActive(true);
         //menuTitle.SetActive(true);
+        Time.timeScale = 1;
     }
 
     private void Update()
