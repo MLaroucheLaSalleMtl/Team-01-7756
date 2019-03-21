@@ -257,6 +257,11 @@ PrefabInstance:
       propertyPath: panel
       value: 
       objectReference: {fileID: 770841976}
+    - target: {fileID: 3631117992774304006, guid: c8db28a70bcb4a645a94a67a4d6b53ac,
+        type: 3}
+      propertyPath: levelToUnlock
+      value: lv_2_tutorial
+      objectReference: {fileID: 0}
     - target: {fileID: 4473539189134539772, guid: c8db28a70bcb4a645a94a67a4d6b53ac,
         type: 3}
       propertyPath: m_LocalPosition.x
