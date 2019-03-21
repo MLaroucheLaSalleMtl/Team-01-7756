@@ -127,7 +127,7 @@ PrefabInstance:
     - target: {fileID: 7727654756062106415, guid: 69b1748bda1c3586eaaf0b6956561650,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.3529835
+      value: -1.3
       objectReference: {fileID: 0}
     - target: {fileID: 7727654756062106415, guid: 69b1748bda1c3586eaaf0b6956561650,
         type: 3}
@@ -178,6 +178,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7727654756062106415, guid: 69b1748bda1c3586eaaf0b6956561650,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.9375
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5714710418390921716, guid: 69b1748bda1c3586eaaf0b6956561650, type: 3}
@@ -355,7 +360,7 @@ PrefabInstance:
     - target: {fileID: 7727654756062106415, guid: 69b1748bda1c3586eaaf0b6956561650,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.887
+      value: 8.84
       objectReference: {fileID: 0}
     - target: {fileID: 7727654756062106415, guid: 69b1748bda1c3586eaaf0b6956561650,
         type: 3}
@@ -406,6 +411,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7727654756062106415, guid: 69b1748bda1c3586eaaf0b6956561650,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.93796873
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5714710418390921716, guid: 69b1748bda1c3586eaaf0b6956561650, type: 3}
@@ -1327,14 +1337,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1663153466, guid: bd0a306611837e247875183f10a30068, type: 3}
-      propertyPath: timer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1663153466, guid: bd0a306611837e247875183f10a30068, type: 3}
-      propertyPath: panel
-      value: 
-      objectReference: {fileID: 695361576}
     - target: {fileID: 2118123278288727603, guid: bd0a306611837e247875183f10a30068,
         type: 3}
       propertyPath: optionMenu
@@ -1385,6 +1387,14 @@ PrefabInstance:
       propertyPath: stageName
       value: lv_1_game
       objectReference: {fileID: 0}
+    - target: {fileID: 1663153466, guid: bd0a306611837e247875183f10a30068, type: 3}
+      propertyPath: timer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1663153466, guid: bd0a306611837e247875183f10a30068, type: 3}
+      propertyPath: panel
+      value: 
+      objectReference: {fileID: 695361576}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd0a306611837e247875183f10a30068, type: 3}
 --- !u!114 &802767367 stripped
@@ -1955,7 +1965,7 @@ Transform:
   m_GameObject: {fileID: 1050837643}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -13.157, y: -9.3682, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.1137501, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
