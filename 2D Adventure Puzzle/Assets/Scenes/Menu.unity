@@ -1020,7 +1020,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.10005, y: 4.575}
+  m_AnchoredPosition: {x: -0.10003662, y: 4.574997}
   m_SizeDelta: {x: 32.3, y: 26.85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &696960864
@@ -1581,6 +1581,12 @@ MonoBehaviour:
   loadingScreen: {fileID: 166323608}
   slider: {fileID: 1255789240}
   progressText: {fileID: 131983094}
+  levelNameArr:
+  - lv_1_tutorial
+  - lv_2_tutorial
+  - lv_1_game
+  - lv_2_game
+  - lv_3_game
 --- !u!4 &1166536323
 Transform:
   m_ObjectHideFlags: 0
@@ -1918,6 +1924,12 @@ MonoBehaviour:
   pauseScreen: {fileID: 0}
   player: {fileID: 0}
   deathEffect: {fileID: 0}
+  levelNameArr:
+  - lv_1_tutorial
+  - lv_2_tutorial
+  - lv_1_game
+  - lv_2_game
+  - lv_3_game
 --- !u!4 &1354986661
 Transform:
   m_ObjectHideFlags: 0
