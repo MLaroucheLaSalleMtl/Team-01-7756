@@ -13,7 +13,6 @@ public class testmove : MonoBehaviour
      [SerializeField] float moveSpeed = 5f;
     //To save the current position of the platform/object
     private Vector3 currentTarget;
-    public Animator anime;
 
 
 
@@ -21,7 +20,6 @@ public class testmove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        anime = GetComponent<Animator>();
         currentTarget = endPoint.position;
     }
 
@@ -31,14 +29,13 @@ public class testmove : MonoBehaviour
         //Moving to the end point
         movingObject.transform.position = Vector2.MoveTowards(movingObject.transform.position, currentTarget, moveSpeed * Time.deltaTime);
 
- 
+        if (movingObject.transform.position.y == endPoint.position.y)
+        {
+            currentTarget = startPoint.position;
+        }
         if (movingObject.transform.position.y == startPoint.position.y)
         {
             currentTarget = endPoint.position;
-        }
-        if (movingObject.transform.position.y == endPoint.position.y)
-        {
-           anime.SetBool("Reach",true);
         }
     }
 }
