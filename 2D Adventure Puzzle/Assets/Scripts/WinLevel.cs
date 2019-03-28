@@ -14,7 +14,8 @@ public class WinLevel : MonoBehaviour
     public Image star3;
     public Sprite star;
     public Sprite emptyStar;
-
+   // public string levelToLoad;
+    
 
 
     // Start is called before the first frame update
