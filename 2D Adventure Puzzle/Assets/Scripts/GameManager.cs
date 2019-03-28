@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     public AudioSource deathSound;
     public static bool GameIsPaused = true;
     public GameObject loadingPanel;
-    [SerializeField] int starCount = 0;
+    public int starCount = 0;
     public GameObject menuMain;
     public GameObject menuMain2;
     public GameObject menuTitle;
@@ -25,11 +25,13 @@ public class GameManager : MonoBehaviour
     public GameObject pauseScreen;
     [SerializeField] PlayerController player;
     [SerializeField] GameObject deathEffect;
+   
 
     private void Start()
     {
         //menuMain.SetActive(true);
         //menuTitle.SetActive(true);
+        Time.timeScale = 1;
     }
 
     private void Update()

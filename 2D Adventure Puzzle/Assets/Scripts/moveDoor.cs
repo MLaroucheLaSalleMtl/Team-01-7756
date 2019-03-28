@@ -20,4 +20,31 @@ public class moveDoor : MonoBehaviour
     {
         
     }
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "box")
+        {
+            fakeDoor.SetActive(false);
+            realDoor.SetActive(true);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "box")
+        {
+            fakeDoor.SetActive(true);
+            realDoor.SetActive(false);
+        }
+    }
+
+
+
+
+  
+
+
+
 }
