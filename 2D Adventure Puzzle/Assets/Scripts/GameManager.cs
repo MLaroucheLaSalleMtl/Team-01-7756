@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
     public GameObject pauseScreen;
     [SerializeField] PlayerController player;
     [SerializeField] GameObject deathEffect;
+   
 
     private void Start()
     {
