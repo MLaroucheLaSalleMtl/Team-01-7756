@@ -7,19 +7,23 @@ public class Shake : MonoBehaviour
     private Vector3 cameraStartPos;
     [SerializeField] float shakePower = 0.05f;
     [SerializeField] float shakeDuration = 0.5f;
+    [SerializeField] CutSceneOne checkEvent;
     public Camera cam;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        
+      
     }
 
     // Update is called once per frame
     void Update()
     {
-        Shaking();
+        if (checkEvent.eventOne)
+        {
+            Shaking();
+        }
     }
 
     public void Shaking()
