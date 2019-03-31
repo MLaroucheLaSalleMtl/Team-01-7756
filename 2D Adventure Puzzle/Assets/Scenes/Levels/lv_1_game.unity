@@ -430,7 +430,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1633086398}
+      objectReference: {fileID: 1633086399}
+    - target: {fileID: 6282531360315964870, guid: 0179bbe788f923f44bbd39a332ab3e32,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ExitGame
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0179bbe788f923f44bbd39a332ab3e32, type: 3}
 --- !u!1001 &619507776
@@ -444,6 +449,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BasePlayground
+      objectReference: {fileID: 0}
+    - target: {fileID: 747908929140232740, guid: 5b991034d47c60e118983e9777368f55,
+        type: 3}
+      propertyPath: jumpPower
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 747908929140232740, guid: 5b991034d47c60e118983e9777368f55,
+        type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1633086399}
+    - target: {fileID: 747908929140232740, guid: 5b991034d47c60e118983e9777368f55,
+        type: 3}
+      propertyPath: characterSpeed
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3520532637662971313, guid: 5b991034d47c60e118983e9777368f55,
         type: 3}
@@ -534,21 +554,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Mass
       value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 747908929140232740, guid: 5b991034d47c60e118983e9777368f55,
-        type: 3}
-      propertyPath: jumpPower
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 747908929140232740, guid: 5b991034d47c60e118983e9777368f55,
-        type: 3}
-      propertyPath: gm
-      value: 
-      objectReference: {fileID: 1633086399}
-    - target: {fileID: 747908929140232740, guid: 5b991034d47c60e118983e9777368f55,
-        type: 3}
-      propertyPath: characterSpeed
-      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 989434004107955995, guid: 5b991034d47c60e118983e9777368f55, type: 3}
@@ -2042,6 +2047,11 @@ PrefabInstance:
       propertyPath: panel
       value: 
       objectReference: {fileID: 974037513}
+    - target: {fileID: 7390369979228158510, guid: aa6bc2f01aab97c4bae5d15988acfb8f,
+        type: 3}
+      propertyPath: BypassListenerEffects
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa6bc2f01aab97c4bae5d15988acfb8f, type: 3}
 --- !u!1001 &1293200953
@@ -2119,19 +2129,13 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1293200953}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1633086398 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2118123278288727600, guid: bd0a306611837e247875183f10a30068,
-    type: 3}
-  m_PrefabInstance: {fileID: 1636267833}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1633086399 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2118123278288727603, guid: bd0a306611837e247875183f10a30068,
     type: 3}
   m_PrefabInstance: {fileID: 1636267833}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1633086398}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1f3cd8f941a08e64d94d04118bc35198, type: 3}
@@ -2202,6 +2206,11 @@ PrefabInstance:
     - target: {fileID: 6114379700092108754, guid: bd0a306611837e247875183f10a30068,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2118123278288727607, guid: bd0a306611837e247875183f10a30068,
+        type: 3}
+      propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2118123278288727603, guid: bd0a306611837e247875183f10a30068,
