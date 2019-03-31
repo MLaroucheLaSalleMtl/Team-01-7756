@@ -360,6 +360,7 @@ MonoBehaviour:
   shakeDuration: 0.5
   checkEvent: {fileID: 1527336500}
   cam: {fileID: 1753410810}
+  bossSong: {fileID: 549821102}
 --- !u!82 &549821102
 AudioSource:
   m_ObjectHideFlags: 0

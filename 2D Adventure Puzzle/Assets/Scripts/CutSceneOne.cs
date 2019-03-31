@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class CutSceneOne : MonoBehaviour
 {
     [SerializeField] AudioSource introSong;
-    [SerializeField] AudioSource bossSong;
+    
     //The platform
     [SerializeField] GameObject movingObject;
     //Position of both point
@@ -24,7 +24,7 @@ public class CutSceneOne : MonoBehaviour
     //[SerializeField] DialogueTrigger message;
     [SerializeField] GameObject panelText;
     public Text message;
-    
+    bool check = false;
 
 
 
@@ -58,12 +58,19 @@ public class CutSceneOne : MonoBehaviour
         }
         if(movingObject.transform.position.x == zPoint.position.x)
         {
+            check = true;
+        }
+
+        if (check)
+        {
+            check = false;
             textSurprise.SetActive(false);
             panelText.SetActive(true);
             StartCoroutine("Message");
             StartCoroutine("Wait");
             anime.SetBool("Reach", true);
             StartCoroutine("NextLevel");
+            
         }
     }
 
@@ -71,10 +78,9 @@ public class CutSceneOne : MonoBehaviour
     {
         yield return new WaitForSeconds(1.5f);
         textSurprise.SetActive(true);
-       // introSong.Stop();
+        introSong.Stop();
         if(movingObject.transform.position.y == endPoint.position.y)
         {
-           // bossSong.Play();
             currentTarget = zPoint.position;
             anime.SetBool("Reach", false);
         }
