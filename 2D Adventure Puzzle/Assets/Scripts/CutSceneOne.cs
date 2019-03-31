@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CutSceneOne : MonoBehaviour
 {
@@ -17,6 +18,9 @@ public class CutSceneOne : MonoBehaviour
     public Animator anime;
     public bool eventOne = false;
     [SerializeField] GameObject textSurprise;
+    //[SerializeField] DialogueTrigger message;
+    [SerializeField] GameObject panelText;
+    public Text message;
     
 
 
@@ -46,6 +50,15 @@ public class CutSceneOne : MonoBehaviour
             eventOne = true;
             StartCoroutine("Emote");
         }
+        if(movingObject.transform.position.x == zPoint.position.x)
+        {
+            textSurprise.SetActive(false);
+            panelText.SetActive(true);
+            StartCoroutine("Message");
+            StartCoroutine("Wait");
+            anime.SetBool("Reach", true);
+           // message.text = "Only then you can return home";
+        }
     }
 
     IEnumerator Emote()
@@ -55,8 +68,23 @@ public class CutSceneOne : MonoBehaviour
         if(movingObject.transform.position.y == endPoint.position.y)
         {
             currentTarget = zPoint.position;
+            anime.SetBool("Reach", false);
         }
     }
 
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(2f);
+    }
+   
 
+    IEnumerator Message()
+    {
+        message.text = "Human ...";
+        yield return new WaitForSeconds(0.5f);
+        message.text = "With the last of my power, find my treasure";
+        yield return new WaitForSeconds(2.5f);
+        message.text = "Only then you can return home";
+        yield return new WaitForSeconds(1f);
+    }
 }
