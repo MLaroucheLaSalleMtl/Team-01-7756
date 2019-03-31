@@ -1380,7 +1380,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   introSong: {fileID: 813543549}
-  bossSong: {fileID: 549821102}
   movingObject: {fileID: 1527336498}
   startPoint: {fileID: 1188101164}
   endPoint: {fileID: 1479260157}
