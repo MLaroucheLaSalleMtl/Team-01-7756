@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CutSceneOne : MonoBehaviour
 {
+    [SerializeField] AudioSource introSong;
+    [SerializeField] AudioSource bossSong;
     //The platform
     [SerializeField] GameObject movingObject;
     //Position of both point
@@ -28,6 +31,7 @@ public class CutSceneOne : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        introSong.Play();
         textSurprise.SetActive(false);
         anime = GetComponent<Animator>();
         currentTarget = endPoint.position;
@@ -49,6 +53,8 @@ public class CutSceneOne : MonoBehaviour
             anime.SetBool("Reach", true);
             eventOne = true;
             StartCoroutine("Emote");
+           
+
         }
         if(movingObject.transform.position.x == zPoint.position.x)
         {
@@ -57,7 +63,7 @@ public class CutSceneOne : MonoBehaviour
             StartCoroutine("Message");
             StartCoroutine("Wait");
             anime.SetBool("Reach", true);
-           // message.text = "Only then you can return home";
+            StartCoroutine("NextLevel");
         }
     }
 
@@ -65,8 +71,10 @@ public class CutSceneOne : MonoBehaviour
     {
         yield return new WaitForSeconds(1.5f);
         textSurprise.SetActive(true);
+       // introSong.Stop();
         if(movingObject.transform.position.y == endPoint.position.y)
         {
+           // bossSong.Play();
             currentTarget = zPoint.position;
             anime.SetBool("Reach", false);
         }
@@ -82,9 +90,20 @@ public class CutSceneOne : MonoBehaviour
     {
         message.text = "Human ...";
         yield return new WaitForSeconds(0.5f);
+        message.text = "";
+        yield return new WaitForSeconds(0.5f);
         message.text = "With the last of my power, find my treasure";
         yield return new WaitForSeconds(2.5f);
+        message.text = "";       
         message.text = "Only then you can return home";
         yield return new WaitForSeconds(1f);
     }
+
+    IEnumerator NextLevel()
+    {
+        yield return new WaitForSeconds(6f);
+        SceneManager.LoadScene(4);
+    }
+
+
 }

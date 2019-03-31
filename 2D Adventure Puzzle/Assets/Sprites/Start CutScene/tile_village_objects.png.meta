@@ -120,11 +120,11 @@ TextureImporter:
         serializedVersion: 2
         x: 1
         y: 0
-        width: 91
-        height: 247
+        width: 98
+        height: 256
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 128, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 57}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -278,13 +278,13 @@ TextureImporter:
       name: tile_village_objects_8
       rect:
         serializedVersion: 2
-        x: 34
+        x: 2
         y: 0
-        width: 94
-        height: 116
+        width: 30
+        height: 126
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 2}
       outline: []
       physicsShape: []
       tessellationDetail: 0
