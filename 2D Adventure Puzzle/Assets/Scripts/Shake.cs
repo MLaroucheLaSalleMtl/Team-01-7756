@@ -9,6 +9,8 @@ public class Shake : MonoBehaviour
     [SerializeField] float shakeDuration = 0.5f;
     [SerializeField] CutSceneOne checkEvent;
     public Camera cam;
+    [SerializeField] AudioSource bossSong;
+    bool switchOn = true;
 
 
     // Start is called before the first frame update
@@ -23,6 +25,10 @@ public class Shake : MonoBehaviour
         if (checkEvent.eventOne)
         {
             Shaking();
+            if(switchOn && !bossSong.isPlaying)
+            {
+                bossSong.Play();
+            }
         }
     }
 
