@@ -1924,12 +1924,6 @@ MonoBehaviour:
   pauseScreen: {fileID: 0}
   player: {fileID: 0}
   deathEffect: {fileID: 0}
-  levelNameArr:
-  - lv_1_tutorial
-  - lv_2_tutorial
-  - lv_1_game
-  - lv_2_game
-  - lv_3_game
 --- !u!4 &1354986661
 Transform:
   m_ObjectHideFlags: 0
@@ -2228,7 +2222,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
