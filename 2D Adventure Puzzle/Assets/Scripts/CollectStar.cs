@@ -19,7 +19,7 @@ public class CollectStar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        gameObject.transform.Rotate(0,5,0 * 10 * Time.deltaTime,0);
     }
 
 
