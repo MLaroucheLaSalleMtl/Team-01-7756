@@ -5,6 +5,7 @@ using UnityEngine;
 public class ButtonOnOff : MonoBehaviour
 {
     [SerializeField] GameObject obstacle;
+    [SerializeField] bool initiallyVisible = false;
 
 
     // Start is called before the first frame update
@@ -23,7 +24,7 @@ public class ButtonOnOff : MonoBehaviour
     {
         if(collision.gameObject.tag == "box")
         {
-            obstacle.SetActive(false);
+            obstacle.SetActive(!initiallyVisible);
         }
     }
 
@@ -31,7 +32,7 @@ public class ButtonOnOff : MonoBehaviour
     {
         if (collision.gameObject.tag == "box")
         {
-            obstacle.SetActive(true);
+            obstacle.SetActive(initiallyVisible);
         }
     }
 
