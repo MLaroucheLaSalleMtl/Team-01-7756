@@ -25,6 +25,7 @@ public class CutSceneOne : MonoBehaviour
     [SerializeField] GameObject panelText;
     public Text message;
     bool check = false;
+    bool afterMessage = false;
 
 
 
@@ -67,10 +68,9 @@ public class CutSceneOne : MonoBehaviour
             textSurprise.SetActive(false);
             panelText.SetActive(true);
             StartCoroutine("Message");
-            StartCoroutine("Wait");
+            StartCoroutine("Wait");           
             anime.SetBool("Reach", true);
-            StartCoroutine("NextLevel");
-            
+            StartCoroutine("NextLevel");           
         }
     }
 
@@ -100,9 +100,9 @@ public class CutSceneOne : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         message.text = "With the last of my power, find my treasure";
         yield return new WaitForSeconds(2.5f);
-        message.text = "";       
         message.text = "Only then you can return home";
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
+       // afterMessage = true;
     }
 
     IEnumerator NextLevel()
