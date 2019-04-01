@@ -26,6 +26,7 @@ public class CutSceneOne : MonoBehaviour
     public Text message;
     bool check = false;
     bool afterMessage = false;
+    //private bool a;
 
 
 
@@ -57,21 +58,22 @@ public class CutSceneOne : MonoBehaviour
            
 
         }
-        if(movingObject.transform.position.x == zPoint.position.x)
+        
+        if(!check && movingObject.transform.position.x == zPoint.position.x)
         {
             check = true;
-        }
-
-        if (check)
-        {
-            check = false;
+            Debug.Log(check);
             textSurprise.SetActive(false);
             panelText.SetActive(true);
             StartCoroutine("Message");
-            StartCoroutine("Wait");           
-            anime.SetBool("Reach", true);
-            StartCoroutine("NextLevel");           
+            //if (afterMessage)
+            //{
+               
+                StartCoroutine("NextLevel");
+            //}
         }
+
+       
     }
 
     IEnumerator Emote()
@@ -86,10 +88,6 @@ public class CutSceneOne : MonoBehaviour
         }
     }
 
-    IEnumerator Wait()
-    {
-        yield return new WaitForSeconds(2f);
-    }
    
 
     IEnumerator Message()
@@ -98,11 +96,17 @@ public class CutSceneOne : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         message.text = "";
         yield return new WaitForSeconds(0.5f);
-        message.text = "With the last of my power, find my treasure";
+       // if (Input.anyKey)
+       // {
+            message.text = "With the last of my power, find my treasure";
+       // }
         yield return new WaitForSeconds(2.5f);
-        message.text = "Only then you can return home";
+        //if (Input.anyKey)
+        //{
+            message.text = "Only then you can return home";
+        //}
         yield return new WaitForSeconds(2f);
-       // afterMessage = true;
+        //afterMessage = true;
     }
 
     IEnumerator NextLevel()
