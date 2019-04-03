@@ -944,6 +944,11 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 1b1afb00467768641b78d3d58c2ec941, type: 2}
+    - target: {fileID: 1330293550844578133, guid: d0a28ebb6d9fef6449f5bbd613337db1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1330293550844578132, guid: d0a28ebb6d9fef6449f5bbd613337db1,
         type: 3}
       propertyPath: m_Constraints
