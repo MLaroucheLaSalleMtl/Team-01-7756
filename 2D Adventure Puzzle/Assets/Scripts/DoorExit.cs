@@ -6,8 +6,9 @@ using UnityEngine.UI;
 public class DoorExit : MonoBehaviour
 {
     public GameObject panel;
-    public string levelToUnlock;
+    [SerializeField] string levelToUnlock;
 
+    [SerializeField] int nextLevel;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +27,7 @@ public class DoorExit : MonoBehaviour
         if(collision.gameObject.tag == "goal")
         {
             PlayerPrefs.SetInt(levelToUnlock, 1);
+            PlayerPrefs.SetInt("currentUnlockedLevel", nextLevel);
             panel.SetActive(true);
             Time.timeScale = 0;
         }
