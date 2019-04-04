@@ -7,51 +7,57 @@ using UnityEngine.SceneManagement;
 public class LevelManager : MonoBehaviour
 {
 
-    [SerializeField] Button[] levels;
-    [SerializeField] int size = 5;
+    [SerializeField] Button levelButton;
     [SerializeField] string levelToLoad;
-    [SerializeField] bool unLocked;
     [SerializeField] Image lockedImage;
+
+    private string firstLevel = "level_1";
 
     // Start is called before the first frame update
     void Start()
     {
        // lockedImage.gameObject.SetActive(true);
-        PlayerPrefs.SetInt("lv_1_tutorial", 1);
+        // PlayerPrefs.SetInt("level_1", 1);
 
-        //if (!unLocked)
-        //{
+        // if (!unLocked)
+        // {
         //    for (int i = 0; i < levels.Length; i++)
         //    {
         //        levels[i].interactable = false;
         //    }
-        //}
+        // }
 
-        if (PlayerPrefs.GetInt(levelToLoad) == 1)
-        {
-            unLocked = true;
+        // if (PlayerPrefs.GetInt(levelToLoad) == 1)
+        // {
+        //     unLocked = true;
+        //     lockedImage.gameObject.SetActive(false);
+        // }
+        // else
+        // {
+        //     unLocked = false;
+        // }
+
+        Debug.Log("levelToLoad: " + levelToLoad);
+        Debug.Log("Level to load is unlocked: " + PlayerPrefs.GetInt(levelToLoad));
+
+        PlayerPrefs.SetInt("level_1", 1);
+
+        if (levelToLoad == firstLevel) {
+          lockedImage.gameObject.SetActive(false);
+        } else {
+          if (PlayerPrefs.GetInt(levelToLoad) == 1) {
             lockedImage.gameObject.SetActive(false);
-
+          }
+          else {
+            levelButton.interactable = false;
+          }
         }
-        else
-        {
-            unLocked = false;
-        }
-       
-
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
 
     public void SelectStage()
     {
-        if (unLocked)
+        if (PlayerPrefs.GetInt(levelToLoad) == 1)
         {
             SceneManager.LoadScene(levelToLoad);
         }
