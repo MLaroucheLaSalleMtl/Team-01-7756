@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,58 +10,49 @@ public class LevelManager : MonoBehaviour
 
     [SerializeField] Button levelButton;
     [SerializeField] string levelToLoad;
+
     [SerializeField] Image lockedImage;
 
-    private string firstLevel = "level_1";
+    private bool levelIsUnlocked;
+
+    private int unlockedLevel;
+
+    private void Awake() {
+      // levelIsUnlocked = (PlayerPrefs.GetInt(levelToLoad) == 1) ? true : false;
+      unlockedLevel = PlayerPrefs.GetInt("currentUnlockedLevel");
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-       // lockedImage.gameObject.SetActive(true);
-        // PlayerPrefs.SetInt("level_1", 1);
+        Debug.Log("unlockedLevel: " + unlockedLevel);
 
-        // if (!unLocked)
-        // {
-        //    for (int i = 0; i < levels.Length; i++)
-        //    {
-        //        levels[i].interactable = false;
-        //    }
-        // }
+        string levelsToLoad = GetLevelsToLoad();
 
-        // if (PlayerPrefs.GetInt(levelToLoad) == 1)
-        // {
-        //     unLocked = true;
-        //     lockedImage.gameObject.SetActive(false);
-        // }
-        // else
-        // {
-        //     unLocked = false;
-        // }
+        Debug.Log("levelsToLoad: " + levelsToLoad);
 
-        Debug.Log("levelToLoad: " + levelToLoad);
-        Debug.Log("Level to load is unlocked: " + PlayerPrefs.GetInt(levelToLoad));
-
-        PlayerPrefs.SetInt("level_1", 1);
-
-        if (levelToLoad == firstLevel) {
-          lockedImage.gameObject.SetActive(false);
-        } else {
-          if (PlayerPrefs.GetInt(levelToLoad) == 1) {
-            lockedImage.gameObject.SetActive(false);
-          }
-          else {
-            levelButton.interactable = false;
-          }
-        }
+        GetUnlockedLevels(unlockedLevel, levelsToLoad);
     }
 
+    string GetLevelsToLoad() {
+      return levelToLoad.Substring(6);
+    }
+
+    void GetUnlockedLevels(int currentlyUnlocked, string levelsToLoad) {
+      if (currentlyUnlocked >= int.Parse(levelsToLoad)) {
+        levelIsUnlocked = true;
+        lockedImage.gameObject.SetActive(false);
+      } else {
+        levelIsUnlocked = false;
+        levelButton.interactable = false;
+      }
+    }
 
     public void SelectStage()
     {
-        if (PlayerPrefs.GetInt(levelToLoad) == 1)
-        {
-            SceneManager.LoadScene(levelToLoad);
-        }
+      if (levelIsUnlocked) {
+        SceneManager.LoadScene(levelToLoad);
+      }
     }
 
 }

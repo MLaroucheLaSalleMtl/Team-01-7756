@@ -330,7 +330,17 @@ PrefabInstance:
     - target: {fileID: 3631117992774304006, guid: c8db28a70bcb4a645a94a67a4d6b53ac,
         type: 3}
       propertyPath: levelToUnlock
-      value: "level_2\x13"
+      value: "level_2\x13 "
+      objectReference: {fileID: 0}
+    - target: {fileID: 3631117992774304006, guid: c8db28a70bcb4a645a94a67a4d6b53ac,
+        type: 3}
+      propertyPath: levelNumToUnlock
+      value: "\x13"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3631117992774304006, guid: c8db28a70bcb4a645a94a67a4d6b53ac,
+        type: 3}
+      propertyPath: nextLevel
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4473539189134539772, guid: c8db28a70bcb4a645a94a67a4d6b53ac,
         type: 3}
@@ -1058,6 +1068,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2699746374039748905, guid: 6b847be9be2b6fb4a9061837530c6fd1, type: 3}
+    - {fileID: 2699746374084133678, guid: 6b847be9be2b6fb4a9061837530c6fd1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6b847be9be2b6fb4a9061837530c6fd1, type: 3}
 --- !u!114 &2699746372557053061 stripped
 MonoBehaviour:

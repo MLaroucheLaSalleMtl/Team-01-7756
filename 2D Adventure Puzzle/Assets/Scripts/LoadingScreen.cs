@@ -17,6 +17,8 @@ public class LoadingScreen : MonoBehaviour
         {
             PlayerPrefs.SetInt(levelNameArr[i], 0);
         }
+        PlayerPrefs.SetInt("currentUnlockedLevel", 1);
+
         StartCoroutine(LoadAsyncchronously(sceneIndex));
     }
 

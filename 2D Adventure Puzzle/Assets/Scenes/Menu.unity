@@ -1582,11 +1582,14 @@ MonoBehaviour:
   slider: {fileID: 1255789240}
   progressText: {fileID: 131983094}
   levelNameArr:
-  - lv_1_tutorial
-  - lv_2_tutorial
-  - lv_1_game
-  - lv_2_game
-  - lv_3_game
+  - level_1
+  - level_2
+  - level_3
+  - level_4
+  - level_5
+  - level_6
+  - level_7
+  - "level_8\x13"
 --- !u!4 &1166536323
 Transform:
   m_ObjectHideFlags: 0
