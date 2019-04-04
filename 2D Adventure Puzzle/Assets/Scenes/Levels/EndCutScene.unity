@@ -177,6 +177,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BasePlayground
       objectReference: {fileID: 0}
+    - target: {fileID: 8632939015341045727, guid: 5b991034d47c60e118983e9777368f55,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3520532637662971313, guid: 5b991034d47c60e118983e9777368f55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -215,7 +220,7 @@ PrefabInstance:
     - target: {fileID: 3520532637662971313, guid: 5b991034d47c60e118983e9777368f55,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3520532637662971313, guid: 5b991034d47c60e118983e9777368f55,
         type: 3}
@@ -301,6 +306,11 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 1b1afb00467768641b78d3d58c2ec941, type: 2}
+    - target: {fileID: 1330293550844578133, guid: d0a28ebb6d9fef6449f5bbd613337db1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1330293550844578132, guid: d0a28ebb6d9fef6449f5bbd613337db1,
         type: 3}
       propertyPath: m_Constraints
@@ -388,7 +398,7 @@ PrefabInstance:
     - target: {fileID: 7727654756062106415, guid: 69b1748bda1c3586eaaf0b6956561650,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7727654756062106415, guid: 69b1748bda1c3586eaaf0b6956561650,
         type: 3}

@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 35775323395509313}
   - component: {fileID: 4249825350792248350}
   - component: {fileID: 1322142459}
-  m_Layer: 0
-  m_Name: Objective_circle
+  m_Layer: 8
+  m_Name: circle
   m_TagString: goal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
