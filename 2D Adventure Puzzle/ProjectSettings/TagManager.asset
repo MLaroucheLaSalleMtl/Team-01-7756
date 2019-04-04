@@ -9,6 +9,7 @@ TagManager:
   - goal
   - star
   - box
+  - boss
   layers:
   - Default
   - TransparentFX
@@ -21,7 +22,7 @@ TagManager:
   - Ground
   - Player
   - Wall
-  - 
+  - Boss
   - 
   - 
   - 
