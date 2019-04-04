@@ -76,7 +76,8 @@ public class GameManager : MonoBehaviour
         player.gameObject.SetActive(false);
         Instantiate(deathEffect, player.gameObject.transform.position, player.gameObject.transform.rotation);
         yield return new WaitForSeconds(1.5f);
-        
+
+        ReloadStage();
         player.gameObject.SetActive(true);
         player.gameObject.transform.position = player.respawnPosition;
     }

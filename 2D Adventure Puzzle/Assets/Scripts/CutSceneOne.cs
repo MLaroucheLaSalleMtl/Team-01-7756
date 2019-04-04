@@ -21,7 +21,6 @@ public class CutSceneOne : MonoBehaviour
     public Animator anime;
     public bool eventOne = false;
     [SerializeField] GameObject textSurprise;
-    //[SerializeField] DialogueTrigger message;
     [SerializeField] GameObject panelText;
     public Text message;
     bool check = false;
@@ -55,8 +54,6 @@ public class CutSceneOne : MonoBehaviour
             anime.SetBool("Reach", true);
             eventOne = true;
             StartCoroutine("Emote");
-           
-
         }
         
         if(!check && movingObject.transform.position.x == zPoint.position.x)
@@ -65,15 +62,9 @@ public class CutSceneOne : MonoBehaviour
             Debug.Log(check);
             textSurprise.SetActive(false);
             panelText.SetActive(true);
-            StartCoroutine("Message");
-            //if (afterMessage)
-            //{
-               
-                StartCoroutine("NextLevel");
-            //}
+            StartCoroutine("Message");                                   
         }
-
-       
+      
     }
 
     IEnumerator Emote()
@@ -93,27 +84,17 @@ public class CutSceneOne : MonoBehaviour
     IEnumerator Message()
     {
         message.text = "Human ...";
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
         message.text = "";
         yield return new WaitForSeconds(0.5f);
-       // if (Input.anyKey)
-       // {
-            message.text = "With the last of my power, find my treasure";
-       // }
-        yield return new WaitForSeconds(2.5f);
-        //if (Input.anyKey)
-        //{
-            message.text = "Only then you can return home";
-        //}
-        yield return new WaitForSeconds(2f);
-        //afterMessage = true;
-    }
-
-    IEnumerator NextLevel()
-    {
-        yield return new WaitForSeconds(6f);
+        message.text = "With the last of my power, find my treasure";    
+        yield return new WaitForSeconds(3.5f);
+        message.text = "Only then you can return home";
+        yield return new WaitForSeconds(5f);
         SceneManager.LoadScene(4);
     }
+
+   
 
 
 }

@@ -33,7 +33,7 @@ public class BossMove : MonoBehaviour
 
     IEnumerator Vortex()
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(3f);
         space.SetActive(true);
        
     }
