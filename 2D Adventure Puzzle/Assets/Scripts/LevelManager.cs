@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,54 +8,49 @@ using UnityEngine.SceneManagement;
 public class LevelManager : MonoBehaviour
 {
 
-    [SerializeField] Button[] levels;
-    [SerializeField] int size = 5;
+    [SerializeField] Button levelButton;
     [SerializeField] string levelToLoad;
-    [SerializeField] bool unLocked;
+
     [SerializeField] Image lockedImage;
 
-    // Start is called before the first frame update
+    private bool levelIsUnlocked;
+
+    private int unlockedLevel;
+
+    private void Awake() {
+      unlockedLevel = PlayerPrefs.GetInt("currentUnlockedLevel");
+    }
+
     void Start()
     {
-       // lockedImage.gameObject.SetActive(true);
-        PlayerPrefs.SetInt("lv_1_tutorial", 1);
-
-        //if (!unLocked)
-        //{
-        //    for (int i = 0; i < levels.Length; i++)
-        //    {
-        //        levels[i].interactable = false;
-        //    }
-        //}
-
-        if (PlayerPrefs.GetInt(levelToLoad) == 1)
-        {
-            unLocked = true;
-            lockedImage.gameObject.SetActive(false);
-
-        }
-        else
-        {
-            unLocked = false;
-        }
-       
-
-
+        string levelsToLoad = GetLevelsToLoad();
+        SetUnlockedLevels(unlockedLevel, levelsToLoad);
+    }
+    string GetLevelsToLoad() {
+      return levelToLoad.Substring(levelToLoad.Length - 1);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    void SetUnlockedLevels(int currentlyUnlocked, string levelsToLoad) {
+      if (int.TryParse(levelsToLoad, out int number)) {
+        if (currentlyUnlocked >= number) {
+          Debug.Log("UNLOCKED: " + levelsToLoad);
+          levelIsUnlocked = true;
+          lockedImage.gameObject.SetActive(false);
+        } else {
+          Debug.Log("LOCKED: " + levelsToLoad);
+          levelIsUnlocked = false;
+          levelButton.interactable = false;
+        }
+      } else {
+        Debug.Log("Cannot convert " + levelsToLoad);
+      }   
     }
-
 
     public void SelectStage()
     {
-        if (unLocked)
-        {
-            SceneManager.LoadScene(levelToLoad);
-        }
+      if (levelIsUnlocked) {
+        SceneManager.LoadScene(levelToLoad);
+      }
     }
 
 }

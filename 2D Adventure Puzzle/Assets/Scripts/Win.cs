@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class Win : MonoBehaviour
 {
 
-    [SerializeField] string stageName;
+    [SerializeField] int stageIndex;
     //public GameObject panel;
 
     // Start is called before the first frame update
@@ -24,7 +24,7 @@ public class Win : MonoBehaviour
     public void NextLevel()
     {
         
-        SceneManager.LoadScene(stageName);
+        SceneManager.LoadScene(stageIndex);
         //Time.timeScale = 1;
         //panel.SetActive(false);
     }
