@@ -687,7 +687,7 @@ PrefabInstance:
     - target: {fileID: 3631117992774304006, guid: c8db28a70bcb4a645a94a67a4d6b53ac,
         type: 3}
       propertyPath: levelToUnlock
-      value: "minhLevel\x13"
+      value: BossLevel
       objectReference: {fileID: 0}
     - target: {fileID: 4473539189134539772, guid: c8db28a70bcb4a645a94a67a4d6b53ac,
         type: 3}
@@ -2350,6 +2350,23 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 3.5195582
       objectReference: {fileID: 0}
+
+    - target: {fileID: 747908929140232741, guid: 5b991034d47c60e118983e9777368f55,
+        type: 3}
+      propertyPath: m_Mass
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2350274324676406740, guid: 5b991034d47c60e118983e9777368f55,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2350274324676406740, guid: 5b991034d47c60e118983e9777368f55,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 13.4
+      objectReference: {fileID: 0}
+
     - target: {fileID: 6933649104703963746, guid: 5b991034d47c60e118983e9777368f55,
         type: 3}
       propertyPath: minClam
