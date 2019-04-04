@@ -2052,6 +2052,11 @@ PrefabInstance:
       propertyPath: levelToUnlock
       value: "level_4\x13"
       objectReference: {fileID: 0}
+    - target: {fileID: 6119139293694858756, guid: aa6bc2f01aab97c4bae5d15988acfb8f,
+        type: 3}
+      propertyPath: nextLevel
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 7390369979228158510, guid: aa6bc2f01aab97c4bae5d15988acfb8f,
         type: 3}
       propertyPath: BypassListenerEffects

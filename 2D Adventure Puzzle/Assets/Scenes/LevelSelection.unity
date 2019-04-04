@@ -1434,7 +1434,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelButton: {fileID: 371409994}
-  levelToLoad: "level_6\x13\x13\x13\x13"
+  levelToLoad: level_6
   lockedImage: {fileID: 925979166}
 --- !u!1 &428626030
 GameObject:
@@ -2353,7 +2353,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelButton: {fileID: 805052493}
-  levelToLoad: "level_7\x13\x13"
+  levelToLoad: level_7
   lockedImage: {fileID: 2139210748}
 --- !u!1001 &881875175
 PrefabInstance:
@@ -2711,7 +2711,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelButton: {fileID: 1027050751}
-  levelToLoad: "level_8\x13\x13\x13\x13"
+  levelToLoad: level_8
   lockedImage: {fileID: 1298173127}
 --- !u!1 &1057540617
 GameObject:

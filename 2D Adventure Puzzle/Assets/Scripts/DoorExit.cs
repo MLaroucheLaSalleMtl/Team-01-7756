@@ -26,14 +26,8 @@ public class DoorExit : MonoBehaviour
     {
         if(collision.gameObject.tag == "goal")
         {
-            Debug.Log("Touching door");
-            Debug.Log("levelToUnlock - " + levelToUnlock);
-
             PlayerPrefs.SetInt(levelToUnlock, 1);
             PlayerPrefs.SetInt("currentUnlockedLevel", nextLevel);
-
-            Debug.Log("NEXT LEVEL: " + nextLevel);
-
             panel.SetActive(true);
             Time.timeScale = 0;
         }

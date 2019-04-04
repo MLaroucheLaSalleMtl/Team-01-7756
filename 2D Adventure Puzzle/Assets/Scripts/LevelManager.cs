@@ -18,34 +18,32 @@ public class LevelManager : MonoBehaviour
     private int unlockedLevel;
 
     private void Awake() {
-      // levelIsUnlocked = (PlayerPrefs.GetInt(levelToLoad) == 1) ? true : false;
       unlockedLevel = PlayerPrefs.GetInt("currentUnlockedLevel");
     }
 
-    // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("unlockedLevel: " + unlockedLevel);
-
         string levelsToLoad = GetLevelsToLoad();
-
-        Debug.Log("levelsToLoad: " + levelsToLoad);
-
-        GetUnlockedLevels(unlockedLevel, levelsToLoad);
+        SetUnlockedLevels(unlockedLevel, levelsToLoad);
     }
-
     string GetLevelsToLoad() {
-      return levelToLoad.Substring(6);
+      return levelToLoad.Substring(levelToLoad.Length - 1);
     }
 
-    void GetUnlockedLevels(int currentlyUnlocked, string levelsToLoad) {
-      if (currentlyUnlocked >= int.Parse(levelsToLoad)) {
-        levelIsUnlocked = true;
-        lockedImage.gameObject.SetActive(false);
+    void SetUnlockedLevels(int currentlyUnlocked, string levelsToLoad) {
+      if (int.TryParse(levelsToLoad, out int number)) {
+        if (currentlyUnlocked >= number) {
+          Debug.Log("UNLOCKED: " + levelsToLoad);
+          levelIsUnlocked = true;
+          lockedImage.gameObject.SetActive(false);
+        } else {
+          Debug.Log("LOCKED: " + levelsToLoad);
+          levelIsUnlocked = false;
+          levelButton.interactable = false;
+        }
       } else {
-        levelIsUnlocked = false;
-        levelButton.interactable = false;
-      }
+        Debug.Log("Cannot convert " + levelsToLoad);
+      }   
     }
 
     public void SelectStage()
