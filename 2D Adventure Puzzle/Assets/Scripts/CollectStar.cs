@@ -7,6 +7,7 @@ public class CollectStar : MonoBehaviour
     [SerializeField] GameManager gm;
     [SerializeField] int addStart;
     [SerializeField] AudioSource starCollect;
+    private bool pickUp = false;
 
 
     // Start is called before the first frame update
@@ -18,7 +19,7 @@ public class CollectStar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        gameObject.transform.Rotate(0,5,0 * 10 * Time.deltaTime,0);
     }
 
 
@@ -26,9 +27,13 @@ public class CollectStar : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            starCollect.Play();
-            Destroy(gameObject);
-            gm.GiveStar();
+            if (!pickUp)
+            {
+                pickUp = true;
+                starCollect.Play();
+                Destroy(gameObject);
+                gm.GiveStar();
+            }
             
         }
     }

@@ -6,7 +6,6 @@ public class ButtonOnOff : MonoBehaviour
 {
     [SerializeField] GameObject obstacle;
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +22,7 @@ public class ButtonOnOff : MonoBehaviour
     {
         if(collision.gameObject.tag == "box")
         {
-            obstacle.SetActive(false);
+            obstacle.SetActive(!obstacle.gameObject.activeSelf);
         }
     }
 
@@ -31,7 +30,7 @@ public class ButtonOnOff : MonoBehaviour
     {
         if (collision.gameObject.tag == "box")
         {
-            obstacle.SetActive(true);
+            obstacle.SetActive(!obstacle.gameObject.activeSelf);
         }
     }
 

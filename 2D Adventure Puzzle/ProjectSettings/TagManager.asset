@@ -9,6 +9,7 @@ TagManager:
   - goal
   - star
   - box
+  - boss
   layers:
   - Default
   - TransparentFX
@@ -20,8 +21,8 @@ TagManager:
   - 
   - Ground
   - Player
-  - 
-  - 
+  - Wall
+  - Boss
   - 
   - 
   - 
@@ -45,4 +46,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: ok
+    uniqueID: 3291598143
     locked: 0

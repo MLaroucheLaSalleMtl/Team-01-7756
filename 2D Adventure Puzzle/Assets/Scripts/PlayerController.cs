@@ -87,6 +87,14 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "boss")
+        {
+            gm.Respawn();
+        }
+    }
+
     private void MainJump()
     {
         //Moment the key is press
