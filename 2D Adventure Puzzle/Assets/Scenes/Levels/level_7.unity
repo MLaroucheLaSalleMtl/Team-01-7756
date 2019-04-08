@@ -675,7 +675,7 @@ PrefabInstance:
     - target: {fileID: 6282531360315964870, guid: 0179bbe788f923f44bbd39a332ab3e32,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ExitGame
+      value: GoMenu
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0179bbe788f923f44bbd39a332ab3e32, type: 3}
@@ -3590,6 +3590,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1041200530, guid: a7d6a7b52c7e3b645b16993922055ba8, type: 3}
+      propertyPath: MinDistance
+      value: 1.008604
+      objectReference: {fileID: 0}
+    - target: {fileID: 1041200530, guid: a7d6a7b52c7e3b645b16993922055ba8, type: 3}
+      propertyPath: spreadCustomCurve.m_Curve.Array.data[0].value
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6267406196942261659, guid: a7d6a7b52c7e3b645b16993922055ba8,
         type: 3}
       propertyPath: m_Offset.x
@@ -3599,14 +3607,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Size.x
       value: 1.2819195
-      objectReference: {fileID: 0}
-    - target: {fileID: 1041200530, guid: a7d6a7b52c7e3b645b16993922055ba8, type: 3}
-      propertyPath: MinDistance
-      value: 1.008604
-      objectReference: {fileID: 0}
-    - target: {fileID: 1041200530, guid: a7d6a7b52c7e3b645b16993922055ba8, type: 3}
-      propertyPath: spreadCustomCurve.m_Curve.Array.data[0].value
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7d6a7b52c7e3b645b16993922055ba8, type: 3}
