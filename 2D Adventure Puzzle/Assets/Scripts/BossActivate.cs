@@ -5,6 +5,7 @@ using UnityEngine;
 public class BossActivate : MonoBehaviour
 {
     [SerializeField] GameObject boss;
+    [SerializeField] AudioSource entryMusic;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +23,7 @@ public class BossActivate : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
+            entryMusic.Stop();
             boss.SetActive(true);
         }
     }
