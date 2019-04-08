@@ -6,6 +6,8 @@ public class ChestController : MonoBehaviour
 {
 
     [SerializeField] Animator anime;
+    [SerializeField] GameObject chestEffect;
+    [SerializeField] GameObject cupOfLife;
 
 
     // Start is called before the first frame update
@@ -25,8 +27,18 @@ public class ChestController : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            anime.SetBool("PlayerReach", true);
+
+            StartCoroutine("Chest");
+
         }
+    }
+
+    IEnumerator Chest()
+    {
+        anime.SetBool("PlayerReach", true);
+        yield return new WaitForSeconds(1.5f);
+        chestEffect.SetActive(true);
+        cupOfLife.SetActive(true);
     }
 
 }
