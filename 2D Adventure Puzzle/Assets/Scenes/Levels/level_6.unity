@@ -384,7 +384,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -2
   m_Sprite: {fileID: 21300000, guid: d38b76b8dae2d8b4da08e59681538490, type: 3}
-  m_Color: {r: 0.41509432, g: 0.29669383, b: 0.13314345, a: 0.48235294}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2850,41 +2850,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: StarSystem
       objectReference: {fileID: 0}
-    - target: {fileID: 2118123278288727603, guid: bd0a306611837e247875183f10a30068,
-        type: 3}
-      propertyPath: deathSound
-      value: 
-      objectReference: {fileID: 1714554944}
-    - target: {fileID: 2118123278288727603, guid: bd0a306611837e247875183f10a30068,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 895325355}
-    - target: {fileID: 2479085294401991898, guid: bd0a306611837e247875183f10a30068,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 895325355}
-    - target: {fileID: 2479085294401991898, guid: bd0a306611837e247875183f10a30068,
-        type: 3}
-      propertyPath: stageIndex
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3166895801286242219, guid: bd0a306611837e247875183f10a30068,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2118123278288727607, guid: bd0a306611837e247875183f10a30068,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2118123278288727607, guid: bd0a306611837e247875183f10a30068,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6114379700092108754, guid: bd0a306611837e247875183f10a30068,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2940,25 +2905,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3166895801568982046, guid: bd0a306611837e247875183f10a30068,
+    - target: {fileID: 2118123278288727607, guid: bd0a306611837e247875183f10a30068,
         type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 82
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3166895801568982046, guid: bd0a306611837e247875183f10a30068,
+    - target: {fileID: 2118123278288727607, guid: bd0a306611837e247875183f10a30068,
         type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5353606420496529249, guid: bd0a306611837e247875183f10a30068,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -3.22
-      objectReference: {fileID: 0}
-    - target: {fileID: 5353606420496529249, guid: bd0a306611837e247875183f10a30068,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.3
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4612800233840792242, guid: bd0a306611837e247875183f10a30068,
         type: 3}
@@ -2980,6 +2935,51 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 0.25
       objectReference: {fileID: 0}
+    - target: {fileID: 5353606420496529249, guid: bd0a306611837e247875183f10a30068,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 5353606420496529249, guid: bd0a306611837e247875183f10a30068,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2118123278288727603, guid: bd0a306611837e247875183f10a30068,
+        type: 3}
+      propertyPath: deathSound
+      value: 
+      objectReference: {fileID: 1714554944}
+    - target: {fileID: 2118123278288727603, guid: bd0a306611837e247875183f10a30068,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 895325355}
+    - target: {fileID: 3166895801568982045, guid: bd0a306611837e247875183f10a30068,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 857750908}
+    - target: {fileID: 3166895801568982045, guid: bd0a306611837e247875183f10a30068,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: NextLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3166895801286242219, guid: bd0a306611837e247875183f10a30068,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3166895801568982046, guid: bd0a306611837e247875183f10a30068,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 82
+      objectReference: {fileID: 0}
+    - target: {fileID: 3166895801568982046, guid: bd0a306611837e247875183f10a30068,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3166895801276211943, guid: bd0a306611837e247875183f10a30068,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2995,10 +2995,26 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 79.00001
       objectReference: {fileID: 0}
+    - target: {fileID: 3166895801286242217, guid: bd0a306611837e247875183f10a30068,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 68e4d4993d7026044b503951412cb557,
+        type: 3}
     - target: {fileID: 2920538547434042864, guid: bd0a306611837e247875183f10a30068,
         type: 3}
       propertyPath: m_UpdateMode
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2479085294401991898, guid: bd0a306611837e247875183f10a30068,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 895325355}
+    - target: {fileID: 2479085294401991898, guid: bd0a306611837e247875183f10a30068,
+        type: 3}
+      propertyPath: stageIndex
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1032897295884895020, guid: bd0a306611837e247875183f10a30068,
         type: 3}
@@ -3032,6 +3048,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 857750904}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &857750908 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2479085294401991898, guid: bd0a306611837e247875183f10a30068,
+    type: 3}
+  m_PrefabInstance: {fileID: 857750904}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9e7e4560e89d4b4ba82b96f9aebb8fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &895325355 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 747908929140232740, guid: 5b991034d47c60e118983e9777368f55,
@@ -3113,7 +3141,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -2
   m_Sprite: {fileID: 21300000, guid: d38b76b8dae2d8b4da08e59681538490, type: 3}
-  m_Color: {r: 0.41509432, g: 0.29669383, b: 0.13314345, a: 0.48235294}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3269,16 +3297,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: helper_panel
       objectReference: {fileID: 0}
-    - target: {fileID: 1032897295869287410, guid: 277923c5313daa014a0c8502ad8c50a6,
-        type: 3}
-      propertyPath: m_Text
-      value: Where is this place? Am I lost or am I going somewhere?
-      objectReference: {fileID: 0}
-    - target: {fileID: 1032897295869287410, guid: 277923c5313daa014a0c8502ad8c50a6,
-        type: 3}
-      propertyPath: m_FontData.m_LineSpacing
-      value: 1.5
-      objectReference: {fileID: 0}
     - target: {fileID: 1032897296966297803, guid: 277923c5313daa014a0c8502ad8c50a6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3388,6 +3406,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 872
+      objectReference: {fileID: 0}
+    - target: {fileID: 1032897295869287410, guid: 277923c5313daa014a0c8502ad8c50a6,
+        type: 3}
+      propertyPath: m_Text
+      value: Where is this place? Am I lost or am I going somewhere?
+      objectReference: {fileID: 0}
+    - target: {fileID: 1032897295869287410, guid: 277923c5313daa014a0c8502ad8c50a6,
+        type: 3}
+      propertyPath: m_FontData.m_LineSpacing
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 277923c5313daa014a0c8502ad8c50a6, type: 3}
@@ -3625,11 +3653,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4220621941103436113, guid: 677cc29a58c482d35816083618831fc1,
-        type: 3}
-      propertyPath: obstacle
-      value: 
-      objectReference: {fileID: 1136067317}
     - target: {fileID: 4220621941103436114, guid: 677cc29a58c482d35816083618831fc1,
         type: 3}
       propertyPath: m_Offset.x
@@ -3640,6 +3663,11 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 0.8657112
       objectReference: {fileID: 0}
+    - target: {fileID: 4220621941103436113, guid: 677cc29a58c482d35816083618831fc1,
+        type: 3}
+      propertyPath: obstacle
+      value: 
+      objectReference: {fileID: 1136067317}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 677cc29a58c482d35816083618831fc1, type: 3}
 --- !u!4 &1026923734 stripped
@@ -3859,11 +3887,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4220621941103436113, guid: 677cc29a58c482d35816083618831fc1,
-        type: 3}
-      propertyPath: obstacle
-      value: 
-      objectReference: {fileID: 624755033}
     - target: {fileID: 4220621941103436114, guid: 677cc29a58c482d35816083618831fc1,
         type: 3}
       propertyPath: m_Offset.x
@@ -3874,6 +3897,11 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 0.8657112
       objectReference: {fileID: 0}
+    - target: {fileID: 4220621941103436113, guid: 677cc29a58c482d35816083618831fc1,
+        type: 3}
+      propertyPath: obstacle
+      value: 
+      objectReference: {fileID: 624755033}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 677cc29a58c482d35816083618831fc1, type: 3}
 --- !u!4 &1104477860 stripped
@@ -3985,11 +4013,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4220621941103436113, guid: 677cc29a58c482d35816083618831fc1,
-        type: 3}
-      propertyPath: obstacle
-      value: 
-      objectReference: {fileID: 357937700}
     - target: {fileID: 4220621941103436114, guid: 677cc29a58c482d35816083618831fc1,
         type: 3}
       propertyPath: m_Offset.x
@@ -4000,6 +4023,11 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 0.8657112
       objectReference: {fileID: 0}
+    - target: {fileID: 4220621941103436113, guid: 677cc29a58c482d35816083618831fc1,
+        type: 3}
+      propertyPath: obstacle
+      value: 
+      objectReference: {fileID: 357937700}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 677cc29a58c482d35816083618831fc1, type: 3}
 --- !u!1001 &1212169839
@@ -4188,7 +4216,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -2
   m_Sprite: {fileID: 21300000, guid: d38b76b8dae2d8b4da08e59681538490, type: 3}
-  m_Color: {r: 0.41509432, g: 0.29669383, b: 0.13314345, a: 0.48235294}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4265,11 +4293,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4220621941103436113, guid: 677cc29a58c482d35816083618831fc1,
-        type: 3}
-      propertyPath: obstacle
-      value: 
-      objectReference: {fileID: 1688662447}
     - target: {fileID: 4220621941103436114, guid: 677cc29a58c482d35816083618831fc1,
         type: 3}
       propertyPath: m_Offset.x
@@ -4280,6 +4303,11 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 0.8657112
       objectReference: {fileID: 0}
+    - target: {fileID: 4220621941103436113, guid: 677cc29a58c482d35816083618831fc1,
+        type: 3}
+      propertyPath: obstacle
+      value: 
+      objectReference: {fileID: 1688662447}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 677cc29a58c482d35816083618831fc1, type: 3}
 --- !u!1001 &1663202443
@@ -4938,7 +4966,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -2
   m_Sprite: {fileID: 21300000, guid: d38b76b8dae2d8b4da08e59681538490, type: 3}
-  m_Color: {r: 0.41509432, g: 0.29669383, b: 0.13314345, a: 0.48235294}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
