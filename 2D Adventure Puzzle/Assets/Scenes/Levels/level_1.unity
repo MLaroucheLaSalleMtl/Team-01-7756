@@ -768,7 +768,8 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 19285720}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2959931686150466576, guid: 0179bbe788f923f44bbd39a332ab3e32, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0179bbe788f923f44bbd39a332ab3e32, type: 3}
 --- !u!82 &1251393877 stripped
 AudioSource:
@@ -1064,7 +1065,7 @@ PrefabInstance:
     - target: {fileID: 2699746372525449634, guid: 6b847be9be2b6fb4a9061837530c6fd1,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 700417934, guid: 6b847be9be2b6fb4a9061837530c6fd1, type: 3}
       propertyPath: timer
@@ -1154,7 +1155,36 @@ PrefabInstance:
       propertyPath: stageIndex
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 2699746372525449635, guid: 6b847be9be2b6fb4a9061837530c6fd1,
+      - target: {fileID: 1046101708182316483, guid: 6b847be9be2b6fb4a9061837530c6fd1,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -82
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046101708182316483, guid: 6b847be9be2b6fb4a9061837530c6fd1,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -80
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046101708182316482, guid: 6b847be9be2b6fb4a9061837530c6fd1,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.9811321
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046101708182316482, guid: 6b847be9be2b6fb4a9061837530c6fd1,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.2896474
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046101708182316482, guid: 6b847be9be2b6fb4a9061837530c6fd1,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.1342115
+      objectReference: {fileID: 0}
+    - target: {fileID: 1004508670407115748, guid: 6b847be9be2b6fb4a9061837530c6fd1,
+        type: 3}
+      propertyPath: m_UpdateMode
+      value: 2
+      - target: {fileID: 2699746372525449635, guid: 6b847be9be2b6fb4a9061837530c6fd1,
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 356.9
