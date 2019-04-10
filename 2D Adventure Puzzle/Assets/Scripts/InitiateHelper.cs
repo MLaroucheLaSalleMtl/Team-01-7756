@@ -7,6 +7,7 @@ public class InitiateHelper : MonoBehaviour
 
     [SerializeField] GameObject panel;
 
+
     // Start is called before the first frame update
     void Start()
     {

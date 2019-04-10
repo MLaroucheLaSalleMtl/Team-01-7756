@@ -2,14 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BossActivate : MonoBehaviour
+public class FireActivate : MonoBehaviour
 {
-    [SerializeField] GameObject boss;
+    [SerializeField] GameObject fire;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        boss.SetActive(false);
+        fire.SetActive(false);
     }
 
     // Update is called once per frame
@@ -22,10 +23,7 @@ public class BossActivate : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            boss.SetActive(true);
+            fire.SetActive(true);
         }
     }
-
-
-
 }
