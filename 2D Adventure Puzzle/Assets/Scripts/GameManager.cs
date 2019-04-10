@@ -135,7 +135,6 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(level);
     }
 
-
     public void Option()
     {
         menuMain.SetActive(false);
