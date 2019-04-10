@@ -780,7 +780,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0.13999999, y: 0.13999999, z: 0}
+  m_ChunkCullingBounds: {x: 0.1421234, y: 0.2930174, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -1516,6 +1516,15 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
+  - first: {x: 8, y: 2, z: -1}
+    second:
+      m_TileIndex: 5
+      m_TileSpriteIndex: 5
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
   m_AnimatedTiles: {}
   m_TileAssetArray:
   - m_RefCount: 23
@@ -1528,6 +1537,8 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 97d99149885bee7d9b64289db569a397, type: 2}
   - m_RefCount: 20
     m_Data: {fileID: 11400000, guid: d3f804d69017c2c60a0629d62739410f, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: a9231a16a07ff79efa5dca8164ca4926, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 23
     m_Data: {fileID: 21300000, guid: 8c7ae63be3064574392ed1c52e7d2889, type: 3}
@@ -1539,8 +1550,10 @@ Tilemap:
     m_Data: {fileID: 21300000, guid: f217054a2b16a46428912821cbd124e7, type: 3}
   - m_RefCount: 20
     m_Data: {fileID: 21300000, guid: ec04c02c20f124945b84b148811f27d7, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: e34d83baae092ffb79fe5b88353338cb, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 80
+  - m_RefCount: 81
     m_Data:
       e00: 1
       e01: 0
@@ -1559,12 +1572,12 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 80
+  - m_RefCount: 81
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Origin: {x: -21, y: -4, z: 0}
-  m_Size: {x: 32, y: 5, z: 1}
+  m_Origin: {x: -21, y: -4, z: -1}
+  m_Size: {x: 32, y: 7, z: 2}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -1990,12 +2003,12 @@ PrefabInstance:
     - target: {fileID: 6384673154050141438, guid: aa6bc2f01aab97c4bae5d15988acfb8f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.5
+      value: 8.29
       objectReference: {fileID: 0}
     - target: {fileID: 6384673154050141438, guid: aa6bc2f01aab97c4bae5d15988acfb8f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.96
+      value: -1.73
       objectReference: {fileID: 0}
     - target: {fileID: 6384673154050141438, guid: aa6bc2f01aab97c4bae5d15988acfb8f,
         type: 3}
@@ -2061,6 +2074,16 @@ PrefabInstance:
         type: 3}
       propertyPath: BypassListenerEffects
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6384673152413286038, guid: aa6bc2f01aab97c4bae5d15988acfb8f,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6384673153754706212, guid: aa6bc2f01aab97c4bae5d15988acfb8f,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa6bc2f01aab97c4bae5d15988acfb8f, type: 3}
@@ -2307,11 +2330,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3166895801286242219, guid: bd0a306611837e247875183f10a30068,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2118123278288727603, guid: bd0a306611837e247875183f10a30068,
         type: 3}
       propertyPath: deathSound
@@ -2347,15 +2365,20 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -2.09
       objectReference: {fileID: 0}
-    - target: {fileID: 2920538547434042864, guid: bd0a306611837e247875183f10a30068,
-        type: 3}
-      propertyPath: m_UpdateMode
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 2479085294401991898, guid: bd0a306611837e247875183f10a30068,
         type: 3}
       propertyPath: stageIndex
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3166895801286242219, guid: bd0a306611837e247875183f10a30068,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2920538547434042864, guid: bd0a306611837e247875183f10a30068,
+        type: 3}
+      propertyPath: m_UpdateMode
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1663153466, guid: bd0a306611837e247875183f10a30068, type: 3}
       propertyPath: panel
