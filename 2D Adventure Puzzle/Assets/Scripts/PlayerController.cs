@@ -9,6 +9,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float jumpPower = 5.0f;
     [SerializeField] float localScale = 5.0f;
     [SerializeField] GameObject deathEffect;
+    [SerializeField] GameManager gm;
+    public AudioSource jumpSound;
+
 
     private Animator myAnimator;
     public bool onGround = true;
@@ -16,10 +19,12 @@ public class PlayerController : MonoBehaviour
     private CapsuleCollider2D body;
     private BoxCollider2D feet;
     public Vector2 respawnPosition;
+    public bool respawnCoActive;
 
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 1;
         rigidbody.GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
         body = GetComponent<CapsuleCollider2D>();
@@ -41,9 +46,9 @@ public class PlayerController : MonoBehaviour
             return;
         }
             MainJump();
-        
+           
 
-       
+
 
     }
 
@@ -78,8 +83,15 @@ public class PlayerController : MonoBehaviour
     {
         if(collision.gameObject.tag == "deathzone")
         {
-            Respawn();
-            transform.position = respawnPosition;
+            gm.Respawn();
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "boss")
+        {
+            gm.Respawn();
         }
     }
 
@@ -89,15 +101,10 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             rigidbody.velocity = new Vector2(rigidbody.velocity.x, jumpPower);
+            jumpSound.Play();
         }
     }
 
-
-    public void Respawn()
-    {
-        //This bring the death effect
-        Instantiate(deathEffect, gameObject.transform.position, gameObject.transform.rotation);
-    }
 
 
 }

@@ -9,9 +9,16 @@ public class LoadingScreen : MonoBehaviour
     public GameObject loadingScreen;
     public Slider slider;
     public Text progressText;
+    [SerializeField] string[] levelNameArr;
 
     public void LoadScene(int sceneIndex)
     {
+        for (int i = 0; i < levelNameArr.Length; i++)
+        {
+            PlayerPrefs.SetInt(levelNameArr[i], 0);
+        }
+        PlayerPrefs.SetInt("currentUnlockedLevel", 1);
+
         StartCoroutine(LoadAsyncchronously(sceneIndex));
     }
 
