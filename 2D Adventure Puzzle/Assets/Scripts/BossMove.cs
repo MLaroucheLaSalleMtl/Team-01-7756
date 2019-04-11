@@ -25,6 +25,7 @@ public class BossMove : MonoBehaviour
         {
 
             //player.anime.SetBool("Reach", true);
+            StartCoroutine("Wait");
             bossAnime.SetBool("Moving", true);
             StartCoroutine("Vortex");
             
@@ -38,6 +39,9 @@ public class BossMove : MonoBehaviour
        
     }
 
-
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(1f);
+    }
 
 }
