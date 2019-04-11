@@ -1137,6 +1137,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 68e4d4993d7026044b503951412cb557,
         type: 3}
+    - target: {fileID: 6377971706574406179, guid: bd0a306611837e247875183f10a30068,
+        type: 3}
+      propertyPath: m_Text
+      value: What's that blue button? What does it do?
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1636267837, guid: bd0a306611837e247875183f10a30068, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: bd0a306611837e247875183f10a30068, type: 3}
