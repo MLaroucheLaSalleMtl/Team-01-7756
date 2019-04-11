@@ -296,6 +296,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: StarSystem
       objectReference: {fileID: 0}
+    - target: {fileID: 2479085294401991898, guid: bd0a306611837e247875183f10a30068,
+        type: 3}
+      propertyPath: stageIndex
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6114379700092108754, guid: bd0a306611837e247875183f10a30068,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -426,10 +431,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 68e4d4993d7026044b503951412cb557,
         type: 3}
-    - target: {fileID: 2479085294401991898, guid: bd0a306611837e247875183f10a30068,
+    - target: {fileID: 3166895801568982047, guid: bd0a306611837e247875183f10a30068,
         type: 3}
-      propertyPath: stageIndex
-      value: 5
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1636267837, guid: bd0a306611837e247875183f10a30068, type: 3}
