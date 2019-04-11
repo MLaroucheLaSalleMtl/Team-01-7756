@@ -13,12 +13,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 5
-  lastUpdatedAtString: 2019-04-11T09:21:34.839-04:00
+  lastUpdatedAtString: 2019-04-11T09:37:14.986-04:00
   initializedAtString: 2019-04-11T08:48:16.287-04:00
   entries:
-  - path: 2D Adventure Puzzle\Library\gfu\cache\branches.yaml
-    fullPath: C:\Users\mhanh\OneDrive\Documents\GitHub\Team-01-7756\2D Adventure Puzzle\Library\gfu\cache\branches.yaml
-    projectPath: Library\gfu\cache\branches.yaml
+  - path: 2D Adventure Puzzle\.vs\2D Adventure Puzzle\v15\.suo
+    fullPath: C:\Users\mhanh\OneDrive\Documents\GitHub\Team-01-7756\2D Adventure Puzzle\.vs\2D
+      Adventure Puzzle\v15\.suo
+    projectPath: .vs\2D Adventure Puzzle\v15\.suo
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: 2D Adventure Puzzle\.vs\2D Adventure Puzzle\v15\Server\sqlite3\storage.ide
+    fullPath: C:\Users\mhanh\OneDrive\Documents\GitHub\Team-01-7756\2D Adventure Puzzle\.vs\2D
+      Adventure Puzzle\v15\Server\sqlite3\storage.ide
+    projectPath: .vs\2D Adventure Puzzle\v15\Server\sqlite3\storage.ide
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: 2D Adventure Puzzle\Library\assetDatabase3
+    fullPath: C:\Users\mhanh\OneDrive\Documents\GitHub\Team-01-7756\2D Adventure Puzzle\Library\assetDatabase3
+    projectPath: Library\assetDatabase3
     originalPath: 
     status: 3
     staged: 0
@@ -28,11 +42,11 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
-  - path: 2D Adventure Puzzle\Library\gfu\cache\gitlog.yaml
-    fullPath: C:\Users\mhanh\OneDrive\Documents\GitHub\Team-01-7756\2D Adventure Puzzle\Library\gfu\cache\gitlog.yaml
-    projectPath: Library\gfu\cache\gitlog.yaml
+  - path: 2D Adventure Puzzle\Library\gfu\cache\gitstatusentries.yaml
+    fullPath: C:\Users\mhanh\OneDrive\Documents\GitHub\Team-01-7756\2D Adventure Puzzle\Library\gfu\cache\gitstatusentries.yaml
+    projectPath: Library\gfu\cache\gitstatusentries.yaml
     originalPath: 
-    status: 5
+    status: 3
     staged: 0
   - path: 2D Adventure Puzzle\Library\gfu\cache\gittrackingstatus.yaml
     fullPath: C:\Users\mhanh\OneDrive\Documents\GitHub\Team-01-7756\2D Adventure Puzzle\Library\gfu\cache\gittrackingstatus.yaml
@@ -40,9 +54,9 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
-  - path: 2D Adventure Puzzle\Library\shadercompiler-UnityShaderCompiler.exe0.log
-    fullPath: C:\Users\mhanh\OneDrive\Documents\GitHub\Team-01-7756\2D Adventure Puzzle\Library\shadercompiler-UnityShaderCompiler.exe0.log
-    projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
+  - path: 2D Adventure Puzzle\Library\ScriptAssemblies\Assembly-CSharp.dll
+    fullPath: C:\Users\mhanh\OneDrive\Documents\GitHub\Team-01-7756\2D Adventure Puzzle\Library\ScriptAssemblies\Assembly-CSharp.dll
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
     originalPath: 
     status: 3
     staged: 0
