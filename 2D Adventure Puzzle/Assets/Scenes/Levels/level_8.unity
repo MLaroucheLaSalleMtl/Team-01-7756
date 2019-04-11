@@ -5494,11 +5494,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: StarSystem
       objectReference: {fileID: 0}
-    - target: {fileID: 2479085294401991898, guid: bd0a306611837e247875183f10a30068,
-        type: 3}
-      propertyPath: stageIndex
-      value: 12
-      objectReference: {fileID: 0}
     - target: {fileID: 6114379700092108754, guid: bd0a306611837e247875183f10a30068,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5562,22 +5557,22 @@ PrefabInstance:
     - target: {fileID: 4612800233840792242, guid: bd0a306611837e247875183f10a30068,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.51
+      value: 31.29
       objectReference: {fileID: 0}
     - target: {fileID: 4612800233840792242, guid: bd0a306611837e247875183f10a30068,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.064
+      value: 1.56
       objectReference: {fileID: 0}
     - target: {fileID: 9151173367956818049, guid: bd0a306611837e247875183f10a30068,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.04
+      value: 1.53
       objectReference: {fileID: 0}
     - target: {fileID: 9151173367956818049, guid: bd0a306611837e247875183f10a30068,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.6300006
+      value: 47.24
       objectReference: {fileID: 0}
     - target: {fileID: 5353606420496529249, guid: bd0a306611837e247875183f10a30068,
         type: 3}
@@ -5605,15 +5600,38 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 68e4d4993d7026044b503951412cb557,
         type: 3}
+    - target: {fileID: 2479085294401991898, guid: bd0a306611837e247875183f10a30068,
+        type: 3}
+      propertyPath: stageIndex
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 1032897295884895020, guid: bd0a306611837e247875183f10a30068,
         type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6377971707671425306, guid: bd0a306611837e247875183f10a30068,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -233.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 6377971707671425306, guid: bd0a306611837e247875183f10a30068,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -65.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6377971707671425306, guid: bd0a306611837e247875183f10a30068,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 206.9
+      objectReference: {fileID: 0}
     - target: {fileID: 6377971706574406179, guid: bd0a306611837e247875183f10a30068,
         type: 3}
       propertyPath: m_Text
-      value: You better start running
+      value: 'The knight will kill anyone who dare to take the treasure.
+
+
+        Run, Little Bean, run!'
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1636267837, guid: bd0a306611837e247875183f10a30068, type: 3}
@@ -5909,11 +5927,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 3.5195582
       objectReference: {fileID: 0}
-    - target: {fileID: 747908929140232741, guid: 5b991034d47c60e118983e9777368f55,
-        type: 3}
-      propertyPath: m_Mass
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 2350274324676406740, guid: 5b991034d47c60e118983e9777368f55,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -5939,11 +5952,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 747908929140232742, guid: 5b991034d47c60e118983e9777368f55,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 6933649104703963746, guid: 5b991034d47c60e118983e9777368f55,
         type: 3}
       propertyPath: minClam
@@ -5953,6 +5961,16 @@ PrefabInstance:
         type: 3}
       propertyPath: maxClam
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 747908929140232742, guid: 5b991034d47c60e118983e9777368f55,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 747908929140232741, guid: 5b991034d47c60e118983e9777368f55,
+        type: 3}
+      propertyPath: m_Mass
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 989434004107955995, guid: 5b991034d47c60e118983e9777368f55, type: 3}
