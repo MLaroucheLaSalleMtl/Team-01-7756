@@ -13,27 +13,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 5
-  lastUpdatedAtString: 2019-04-11T09:21:05.208-04:00
+  lastUpdatedAtString: 2019-04-11T09:21:34.839-04:00
   initializedAtString: 2019-04-11T08:48:16.287-04:00
   entries:
-  - path: 2D Adventure Puzzle\Assets\Scenes\Levels\level_2.unity
-    fullPath: C:\Users\mhanh\OneDrive\Documents\GitHub\Team-01-7756\2D Adventure Puzzle\Assets\Scenes\Levels\level_2.unity
-    projectPath: Assets\Scenes\Levels\level_2.unity
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: 2D Adventure Puzzle\Assets\Scripts\GameManager.cs
-    fullPath: C:\Users\mhanh\OneDrive\Documents\GitHub\Team-01-7756\2D Adventure Puzzle\Assets\Scripts\GameManager.cs
-    projectPath: Assets\Scripts\GameManager.cs
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: 2D Adventure Puzzle\Library\assetDatabase3
-    fullPath: C:\Users\mhanh\OneDrive\Documents\GitHub\Team-01-7756\2D Adventure Puzzle\Library\assetDatabase3
-    projectPath: Library\assetDatabase3
-    originalPath: 
-    status: 3
-    staged: 0
   - path: 2D Adventure Puzzle\Library\gfu\cache\branches.yaml
     fullPath: C:\Users\mhanh\OneDrive\Documents\GitHub\Team-01-7756\2D Adventure Puzzle\Library\gfu\cache\branches.yaml
     projectPath: Library\gfu\cache\branches.yaml
@@ -50,13 +32,7 @@ MonoBehaviour:
     fullPath: C:\Users\mhanh\OneDrive\Documents\GitHub\Team-01-7756\2D Adventure Puzzle\Library\gfu\cache\gitlog.yaml
     projectPath: Library\gfu\cache\gitlog.yaml
     originalPath: 
-    status: 3
-    staged: 0
-  - path: 2D Adventure Puzzle\Library\gfu\cache\gitstatusentries.yaml
-    fullPath: C:\Users\mhanh\OneDrive\Documents\GitHub\Team-01-7756\2D Adventure Puzzle\Library\gfu\cache\gitstatusentries.yaml
-    projectPath: Library\gfu\cache\gitstatusentries.yaml
-    originalPath: 
-    status: 3
+    status: 5
     staged: 0
   - path: 2D Adventure Puzzle\Library\gfu\cache\gittrackingstatus.yaml
     fullPath: C:\Users\mhanh\OneDrive\Documents\GitHub\Team-01-7756\2D Adventure Puzzle\Library\gfu\cache\gittrackingstatus.yaml
@@ -64,33 +40,9 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
-  - path: 2D Adventure Puzzle\Library\metadata\1f\1f3cd8f941a08e64d94d04118bc35198
-    fullPath: C:\Users\mhanh\OneDrive\Documents\GitHub\Team-01-7756\2D Adventure Puzzle\Library\metadata\1f\1f3cd8f941a08e64d94d04118bc35198
-    projectPath: Library\metadata\1f\1f3cd8f941a08e64d94d04118bc35198
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: 2D Adventure Puzzle\Library\ScriptAssemblies\Assembly-CSharp.dll
-    fullPath: C:\Users\mhanh\OneDrive\Documents\GitHub\Team-01-7756\2D Adventure Puzzle\Library\ScriptAssemblies\Assembly-CSharp.dll
-    projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: 2D Adventure Puzzle\Library\ScriptAssemblies\Assembly-CSharp.pdb
-    fullPath: C:\Users\mhanh\OneDrive\Documents\GitHub\Team-01-7756\2D Adventure Puzzle\Library\ScriptAssemblies\Assembly-CSharp.pdb
-    projectPath: Library\ScriptAssemblies\Assembly-CSharp.pdb
-    originalPath: 
-    status: 3
-    staged: 0
   - path: 2D Adventure Puzzle\Library\shadercompiler-UnityShaderCompiler.exe0.log
     fullPath: C:\Users\mhanh\OneDrive\Documents\GitHub\Team-01-7756\2D Adventure Puzzle\Library\shadercompiler-UnityShaderCompiler.exe0.log
     projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: 2D Adventure Puzzle\ProjectSettings\InputManager.asset
-    fullPath: C:\Users\mhanh\OneDrive\Documents\GitHub\Team-01-7756\2D Adventure Puzzle\ProjectSettings\InputManager.asset
-    projectPath: ProjectSettings\InputManager.asset
     originalPath: 
     status: 3
     staged: 0
