@@ -1,0 +1,187 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1666186674, guid: 68c7e4565cde54155bb78d8e935f1ddb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cacheType: 2
+  lastUpdatedAtString: 2019-04-11T09:05:11.794-04:00
+  initializedAtString: 2019-04-11T09:05:11.772-04:00
+  localBranches:
+  - name: complete-level
+    tracking: 
+  - name: complete_level_panel
+    tracking: origin/complete_level_panel
+  - name: level-decoration
+    tracking: origin/level-decoration
+  - name: level-small-design
+    tracking: origin/level-small-design
+  - name: master
+    tracking: origin/master
+  - name: newLevel
+    tracking: origin/newLevel
+  remoteBranches:
+  - name: origin/CharacterMovement
+    tracking: '[None]'
+  - name: origin/complete_level_panel
+    tracking: '[None]'
+  - name: origin/fix-instruction-panel
+    tracking: '[None]'
+  - name: origin/fix-panel
+    tracking: '[None]'
+  - name: origin/HEAD
+    tracking: '[None]'
+  - name: origin/InteractObject
+    tracking: '[None]'
+  - name: origin/level-decoration
+    tracking: '[None]'
+  - name: origin/level-small-design
+    tracking: '[None]'
+  - name: origin/master
+    tracking: '[None]'
+  - name: origin/newLevel
+    tracking: '[None]'
+  - name: origin/reposition-loading
+    tracking: '[None]'
+  - name: origin/stable
+    tracking: '[None]'
+  remotes:
+  - name: origin
+    url: https://github.com/MLaroucheLaSalleMtl/Team-01-7756.git
+    login: 
+    user: 
+    host: 
+    function: 0
+    token: 
+  localConfigBranches:
+    keys:
+    - complete-level
+    - complete_level_panel
+    - level-decoration
+    - level-small-design
+    - master
+    - newLevel
+    values:
+    - name: complete-level
+      remote:
+        name: 
+        url: 
+      trackingBranch: 
+    - name: complete_level_panel
+      remote:
+        name: origin
+        url: https://github.com/MLaroucheLaSalleMtl/Team-01-7756.git
+      trackingBranch: complete_level_panel
+    - name: level-decoration
+      remote:
+        name: origin
+        url: https://github.com/MLaroucheLaSalleMtl/Team-01-7756.git
+      trackingBranch: level-decoration
+    - name: level-small-design
+      remote:
+        name: origin
+        url: https://github.com/MLaroucheLaSalleMtl/Team-01-7756.git
+      trackingBranch: level-small-design
+    - name: master
+      remote:
+        name: origin
+        url: https://github.com/MLaroucheLaSalleMtl/Team-01-7756.git
+      trackingBranch: master
+    - name: newLevel
+      remote:
+        name: origin
+        url: https://github.com/MLaroucheLaSalleMtl/Team-01-7756.git
+      trackingBranch: newLevel
+  remoteConfigBranches:
+    keys:
+    - origin
+    subKeys:
+    - Values:
+      - CharacterMovement
+      - complete_level_panel
+      - fix-instruction-panel
+      - fix-panel
+      - HEAD
+      - InteractObject
+      - level-decoration
+      - level-small-design
+      - master
+      - newLevel
+      - reposition-loading
+      - stable
+    subKeyValues:
+    - Values:
+      - name: CharacterMovement
+        remote:
+          name: origin
+          url: https://github.com/MLaroucheLaSalleMtl/Team-01-7756.git
+        trackingBranch: 
+      - name: complete_level_panel
+        remote:
+          name: origin
+          url: https://github.com/MLaroucheLaSalleMtl/Team-01-7756.git
+        trackingBranch: 
+      - name: fix-instruction-panel
+        remote:
+          name: origin
+          url: https://github.com/MLaroucheLaSalleMtl/Team-01-7756.git
+        trackingBranch: 
+      - name: fix-panel
+        remote:
+          name: origin
+          url: https://github.com/MLaroucheLaSalleMtl/Team-01-7756.git
+        trackingBranch: 
+      - name: HEAD
+        remote:
+          name: origin
+          url: https://github.com/MLaroucheLaSalleMtl/Team-01-7756.git
+        trackingBranch: 
+      - name: InteractObject
+        remote:
+          name: origin
+          url: https://github.com/MLaroucheLaSalleMtl/Team-01-7756.git
+        trackingBranch: 
+      - name: level-decoration
+        remote:
+          name: origin
+          url: https://github.com/MLaroucheLaSalleMtl/Team-01-7756.git
+        trackingBranch: 
+      - name: level-small-design
+        remote:
+          name: origin
+          url: https://github.com/MLaroucheLaSalleMtl/Team-01-7756.git
+        trackingBranch: 
+      - name: master
+        remote:
+          name: origin
+          url: https://github.com/MLaroucheLaSalleMtl/Team-01-7756.git
+        trackingBranch: 
+      - name: newLevel
+        remote:
+          name: origin
+          url: https://github.com/MLaroucheLaSalleMtl/Team-01-7756.git
+        trackingBranch: 
+      - name: reposition-loading
+        remote:
+          name: origin
+          url: https://github.com/MLaroucheLaSalleMtl/Team-01-7756.git
+        trackingBranch: 
+      - name: stable
+        remote:
+          name: origin
+          url: https://github.com/MLaroucheLaSalleMtl/Team-01-7756.git
+        trackingBranch: 
+  configRemotes:
+    keys:
+    - origin
+    values:
+    - name: origin
+      url: https://github.com/MLaroucheLaSalleMtl/Team-01-7756.git

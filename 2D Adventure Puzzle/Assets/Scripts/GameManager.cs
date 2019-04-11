@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         //To pause the game
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.JoystickButton0))
         {
             if (Time.timeScale == 0f)
             {

@@ -664,7 +664,7 @@ PrefabInstance:
     - target: {fileID: 6282531359633249939, guid: 0179bbe788f923f44bbd39a332ab3e32,
         type: 3}
       propertyPath: m_Name
-      value: In-game Menu
+      value: In-game Menu Panel
       objectReference: {fileID: 0}
     - target: {fileID: 6282531358789449592, guid: 0179bbe788f923f44bbd39a332ab3e32,
         type: 3}

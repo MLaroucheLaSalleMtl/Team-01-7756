@@ -35,4 +35,4 @@ sysinfo.txt
 *.apk
 *.unitypackage
 
-.vscode/
+2D Adventure Puzzle/\.vscode/settings\.json
