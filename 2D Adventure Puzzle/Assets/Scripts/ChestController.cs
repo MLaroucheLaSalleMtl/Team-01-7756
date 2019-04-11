@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ChestController : MonoBehaviour
 {
@@ -39,6 +40,8 @@ public class ChestController : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         chestEffect.SetActive(true);
         cupOfLife.SetActive(true);
+        yield return new WaitForSeconds(3.5f);
+        SceneManager.LoadScene(13);
     }
 
 }
