@@ -77,7 +77,7 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
+    m_LineSpacing: 1.5
   m_Text: "Hello buddy! This is the beginning of your journey. \n\nYour objective
     is to transfer the coin to the door. Be careful! There are a lot of spikes on
     the way! \n\nTry to earn as many stars as possible. Good luck!"
@@ -207,8 +207,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00015806021, y: -15.238087}
-  m_SizeDelta: {x: 369.83, y: 125}
+  m_AnchoredPosition: {x: -0.00015806021, y: 22.5}
+  m_SizeDelta: {x: 356.3, y: 118.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4304858834021842705
 CanvasRenderer:
@@ -250,5 +250,5 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1
+    m_LineSpacing: 1.5
   m_Text: "\x13"
