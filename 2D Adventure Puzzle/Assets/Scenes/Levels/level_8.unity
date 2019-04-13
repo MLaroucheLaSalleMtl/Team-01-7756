@@ -5589,6 +5589,35 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -1.78
       objectReference: {fileID: 0}
+    - target: {fileID: 3166895801286242217, guid: bd0a306611837e247875183f10a30068,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 68e4d4993d7026044b503951412cb557,
+        type: 3}
+    - target: {fileID: 6377971707671425306, guid: bd0a306611837e247875183f10a30068,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -233.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 6377971707671425306, guid: bd0a306611837e247875183f10a30068,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -75.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6377971707671425306, guid: bd0a306611837e247875183f10a30068,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 228.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 6377971706574406179, guid: bd0a306611837e247875183f10a30068,
+        type: 3}
+      propertyPath: m_Text
+      value: 'The knight will kill anyone who dare to take the treasure.
+
+
+        Run, Little Bean, run!'
+      objectReference: {fileID: 0}
     - target: {fileID: 2118123278288727603, guid: bd0a306611837e247875183f10a30068,
         type: 3}
       propertyPath: deathSound
@@ -5599,39 +5628,20 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 895325355}
-    - target: {fileID: 3166895801286242217, guid: bd0a306611837e247875183f10a30068,
+    - target: {fileID: 3472071785932066721, guid: bd0a306611837e247875183f10a30068,
         type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 68e4d4993d7026044b503951412cb557,
+      propertyPath: m_AnchoredPosition.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3472071785932066721, guid: bd0a306611837e247875183f10a30068,
         type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -22
+      objectReference: {fileID: 0}
     - target: {fileID: 1032897295884895020, guid: bd0a306611837e247875183f10a30068,
         type: 3}
       propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6377971707671425306, guid: bd0a306611837e247875183f10a30068,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -233.56
-      objectReference: {fileID: 0}
-    - target: {fileID: 6377971707671425306, guid: bd0a306611837e247875183f10a30068,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -65.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 6377971707671425306, guid: bd0a306611837e247875183f10a30068,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 206.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 6377971706574406179, guid: bd0a306611837e247875183f10a30068,
-        type: 3}
-      propertyPath: m_Text
-      value: 'The knight will kill anyone who dare to take the treasure.
-
-
-        Run, Little Bean, run!'
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1636267837, guid: bd0a306611837e247875183f10a30068, type: 3}
@@ -5947,10 +5957,20 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 64.813126
       objectReference: {fileID: 0}
+    - target: {fileID: 747908929140232741, guid: 5b991034d47c60e118983e9777368f55,
+        type: 3}
+      propertyPath: m_Mass
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5549237023003451932, guid: 5b991034d47c60e118983e9777368f55,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 747908929140232742, guid: 5b991034d47c60e118983e9777368f55,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6933649104703963746, guid: 5b991034d47c60e118983e9777368f55,
         type: 3}
@@ -5961,16 +5981,6 @@ PrefabInstance:
         type: 3}
       propertyPath: maxClam
       value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 747908929140232742, guid: 5b991034d47c60e118983e9777368f55,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 747908929140232741, guid: 5b991034d47c60e118983e9777368f55,
-        type: 3}
-      propertyPath: m_Mass
-      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 989434004107955995, guid: 5b991034d47c60e118983e9777368f55, type: 3}
