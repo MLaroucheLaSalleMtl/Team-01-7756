@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class testmove : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class testmove : MonoBehaviour
     //To save the current position of the platform/object
     private Vector3 currentTarget;
     public Animator anime;
+    
 
 
 
@@ -32,10 +34,10 @@ public class testmove : MonoBehaviour
         movingObject.transform.position = Vector2.MoveTowards(movingObject.transform.position, currentTarget, moveSpeed * Time.deltaTime);
 
  
-        if (movingObject.transform.position.y == startPoint.position.y)
-        {
-            currentTarget = endPoint.position;
-        }
+        //if (movingObject.transform.position.y == startPoint.position.y)
+        //{
+        //    currentTarget = endPoint.position;
+        //}
         if (movingObject.transform.position.y == endPoint.position.y)
         {
            anime.SetBool("Reach",true);

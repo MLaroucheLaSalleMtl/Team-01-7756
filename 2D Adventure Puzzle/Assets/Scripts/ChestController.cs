@@ -41,7 +41,7 @@ public class ChestController : MonoBehaviour
         chestEffect.SetActive(true);
         cupOfLife.SetActive(true);
         yield return new WaitForSeconds(3.5f);
-        SceneManager.LoadScene(13);
+        SceneManager.LoadScene(14);
     }
 
 }

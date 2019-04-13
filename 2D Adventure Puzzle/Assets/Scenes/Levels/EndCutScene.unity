@@ -779,6 +779,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 615316023}
     m_Modifications:
+    - target: {fileID: 1330293550844578120, guid: d0a28ebb6d9fef6449f5bbd613337db1,
+        type: 3}
+      propertyPath: m_Name
+      value: EndGameMain
+      objectReference: {fileID: 0}
     - target: {fileID: 1330293550844578134, guid: d0a28ebb6d9fef6449f5bbd613337db1,
         type: 3}
       propertyPath: m_RootOrder
@@ -807,33 +812,28 @@ PrefabInstance:
     - target: {fileID: 1330293550844578134, guid: d0a28ebb6d9fef6449f5bbd613337db1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.107
+      value: 0.08
       objectReference: {fileID: 0}
     - target: {fileID: 1330293550844578134, guid: d0a28ebb6d9fef6449f5bbd613337db1,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.2454226
       objectReference: {fileID: 0}
-    - target: {fileID: 1330293550844578120, guid: d0a28ebb6d9fef6449f5bbd613337db1,
+    - target: {fileID: 1330293550844578130, guid: d0a28ebb6d9fef6449f5bbd613337db1,
         type: 3}
-      propertyPath: m_Name
-      value: EndGameMain
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 1b1afb00467768641b78d3d58c2ec941, type: 2}
+    - target: {fileID: 1330293550844578133, guid: d0a28ebb6d9fef6449f5bbd613337db1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1330293550844578132, guid: d0a28ebb6d9fef6449f5bbd613337db1,
         type: 3}
       propertyPath: m_Constraints
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1330293550844578133, guid: d0a28ebb6d9fef6449f5bbd613337db1,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1330293550844578130, guid: d0a28ebb6d9fef6449f5bbd613337db1,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 1b1afb00467768641b78d3d58c2ec941, type: 2}
     m_RemovedComponents:
     - {fileID: 1330293550844578133, guid: d0a28ebb6d9fef6449f5bbd613337db1, type: 3}
     - {fileID: 1330293550844578132, guid: d0a28ebb6d9fef6449f5bbd613337db1, type: 3}
@@ -4404,6 +4404,7 @@ MonoBehaviour:
   endPoint: {fileID: 1479260157}
   moveSpeed: 2.5
   anime: {fileID: 1527336501}
+  sceneIndex: 0
 --- !u!1001 &1660564307
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4490,6 +4491,11 @@ PrefabInstance:
         type: 3}
       propertyPath: InitialModule.startSize.scalar
       value: 2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2652338468440107916, guid: a327fc949a5d04c41acef66a430b8862,
+        type: 3}
+      propertyPath: looping
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a327fc949a5d04c41acef66a430b8862, type: 3}
@@ -4785,6 +4791,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FireHolder
       objectReference: {fileID: 0}
+    - target: {fileID: 2780395809335706887, guid: a9a7063e0be88cb43b3288055169a379,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2780395809106686260, guid: a9a7063e0be88cb43b3288055169a379,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4838,11 +4849,6 @@ PrefabInstance:
     - target: {fileID: 2780395809106686260, guid: a9a7063e0be88cb43b3288055169a379,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2780395809335706887, guid: a9a7063e0be88cb43b3288055169a379,
-        type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
