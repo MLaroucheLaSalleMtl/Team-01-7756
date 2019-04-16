@@ -940,6 +940,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3631117992774304006, guid: c8db28a70bcb4a645a94a67a4d6b53ac, type: 3}
+    - {fileID: 832335148, guid: c8db28a70bcb4a645a94a67a4d6b53ac, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c8db28a70bcb4a645a94a67a4d6b53ac, type: 3}
 --- !u!1001 &866928995
 PrefabInstance:
@@ -1201,16 +1202,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 3.91
       objectReference: {fileID: 0}
-    - target: {fileID: 3166895801568982045, guid: bd0a306611837e247875183f10a30068,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1079288580}
-    - target: {fileID: 3166895801568982045, guid: bd0a306611837e247875183f10a30068,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: NextLevel
-      objectReference: {fileID: 0}
     - target: {fileID: 3166895801286242217, guid: bd0a306611837e247875183f10a30068,
         type: 3}
       propertyPath: m_Sprite
@@ -1237,7 +1228,8 @@ PrefabInstance:
       propertyPath: m_Text
       value: What's that blue button? What does it do?
       objectReference: {fileID: 0}
-    - target: {fileID: 636964951, guid: bd0a306611837e247875183f10a30068, type: 3}
+    - target: {fileID: 3166895801286242219, guid: bd0a306611837e247875183f10a30068,
+        type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -1249,14 +1241,23 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: -276.60013
       objectReference: {fileID: 0}
-    - target: {fileID: 3166895801286242219, guid: bd0a306611837e247875183f10a30068,
-        type: 3}
+    - target: {fileID: 636964951, guid: bd0a306611837e247875183f10a30068, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 636964949, guid: bd0a306611837e247875183f10a30068, type: 3}
       propertyPath: m_Color.a
       value: 0.19215687
+      objectReference: {fileID: 0}
+    - target: {fileID: 3166895801568982045, guid: bd0a306611837e247875183f10a30068,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1079288580}
+    - target: {fileID: 3166895801568982045, guid: bd0a306611837e247875183f10a30068,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: NextLevel
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1636267837, guid: bd0a306611837e247875183f10a30068, type: 3}
