@@ -33,7 +33,7 @@ public class WinLevel : MonoBehaviour
 
     public void NextLevel()
     {
-        //SceneManager.LoadScene(stageName);
+        SceneManager.LoadScene(stageName);
     }
 
     public void UpdateStarImage()

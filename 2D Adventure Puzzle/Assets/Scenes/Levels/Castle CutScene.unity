@@ -189,11 +189,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -2.52
       objectReference: {fileID: 0}
-    - target: {fileID: 747908929140232743, guid: 5b991034d47c60e118983e9777368f55,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -7.94
-      objectReference: {fileID: 0}
     - target: {fileID: 747908929140232742, guid: 5b991034d47c60e118983e9777368f55,
         type: 3}
       propertyPath: m_SortingOrder
@@ -258,7 +253,7 @@ GameObject:
   m_Layer: 0
   m_Name: x
   m_TagString: Untagged
-  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
