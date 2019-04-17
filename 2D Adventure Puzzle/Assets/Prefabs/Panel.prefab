@@ -438,6 +438,26 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0.9765041
       objectReference: {fileID: 0}
+    - target: {fileID: 2136459681714327395, guid: d06d89e56f9cfa8409f2e26c11d7939d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -188
+      objectReference: {fileID: 0}
+    - target: {fileID: 9085154652859054119, guid: d06d89e56f9cfa8409f2e26c11d7939d,
+        type: 3}
+      propertyPath: m_Text
+      value: Press Key C or Button X to continue..
+      objectReference: {fileID: 0}
+    - target: {fileID: 9085154652859054119, guid: d06d89e56f9cfa8409f2e26c11d7939d,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9085154652859054119, guid: d06d89e56f9cfa8409f2e26c11d7939d,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d06d89e56f9cfa8409f2e26c11d7939d, type: 3}
 --- !u!1 &544337212775309964 stripped
