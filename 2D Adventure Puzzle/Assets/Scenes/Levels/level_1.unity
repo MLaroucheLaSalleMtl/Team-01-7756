@@ -513,6 +513,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: NextLevel
       objectReference: {fileID: 0}
+    - target: {fileID: 2118123278690172799, guid: bd0a306611837e247875183f10a30068,
+        type: 3}
+      propertyPath: m_FirstSelected
+      value: 
+      objectReference: {fileID: 874366183}
     - target: {fileID: 3472071785932066721, guid: bd0a306611837e247875183f10a30068,
         type: 3}
       propertyPath: m_SizeDelta.y
