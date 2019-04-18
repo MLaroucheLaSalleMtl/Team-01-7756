@@ -507,6 +507,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 68e4d4993d7026044b503951412cb557,
         type: 3}
+    - target: {fileID: 636964951, guid: bd0a306611837e247875183f10a30068, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2118123278288727603, guid: bd0a306611837e247875183f10a30068,
+        type: 3}
+      propertyPath: pauseScreen
+      value: 
+      objectReference: {fileID: 1742476950}
+    - target: {fileID: 2118123278288727603, guid: bd0a306611837e247875183f10a30068,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 628706984}
     - target: {fileID: 636964948, guid: bd0a306611837e247875183f10a30068, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 43.100067
@@ -515,40 +529,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: -271.00015
       objectReference: {fileID: 0}
-    - target: {fileID: 6377971707671425306, guid: bd0a306611837e247875183f10a30068,
+    - target: {fileID: 3166895801286242219, guid: bd0a306611837e247875183f10a30068,
         type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 327.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 6377971707671425306, guid: bd0a306611837e247875183f10a30068,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -235
-      objectReference: {fileID: 0}
-    - target: {fileID: 636964951, guid: bd0a306611837e247875183f10a30068, type: 3}
       propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 636964949, guid: bd0a306611837e247875183f10a30068, type: 3}
-      propertyPath: m_Color.a
-      value: 0.20784314
-      objectReference: {fileID: 0}
-    - target: {fileID: 6377971706574406179, guid: bd0a306611837e247875183f10a30068,
-        type: 3}
-      propertyPath: m_Text
-      value: "Hello buddy! This is the beginning of your journey. \n\nYour objective
-        is to transfer the coin to the door. Be careful! There are obstacles on the
-        way! \n\nTry to earn as many stars as possible. \x13Good luck!"
-      objectReference: {fileID: 0}
-    - target: {fileID: 2118123278690172799, guid: bd0a306611837e247875183f10a30068,
-        type: 3}
-      propertyPath: m_FirstSelected
-      value: 
-      objectReference: {fileID: 874366183}
-    - target: {fileID: 2479085294401991898, guid: bd0a306611837e247875183f10a30068,
-        type: 3}
-      propertyPath: stageIndex
-      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3472071785932066721, guid: bd0a306611837e247875183f10a30068,
         type: 3}
