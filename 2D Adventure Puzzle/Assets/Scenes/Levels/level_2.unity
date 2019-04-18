@@ -1456,12 +1456,17 @@ PrefabInstance:
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 832335148, guid: c8db28a70bcb4a645a94a67a4d6b53ac, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4473539189134539775, guid: c8db28a70bcb4a645a94a67a4d6b53ac,
         type: 3}
       propertyPath: stageName
       value: LevelThree
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 832335148, guid: c8db28a70bcb4a645a94a67a4d6b53ac, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c8db28a70bcb4a645a94a67a4d6b53ac, type: 3}
 --- !u!1 &832335147 stripped
 GameObject:

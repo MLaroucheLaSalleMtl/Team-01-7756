@@ -840,6 +840,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 832335148, guid: c8db28a70bcb4a645a94a67a4d6b53ac, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b07f0aa6e4db30045b5e093e8f77c169, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8db28a70bcb4a645a94a67a4d6b53ac, type: 3}
 --- !u!1001 &335471398
@@ -2030,6 +2034,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: NextLevel
       objectReference: {fileID: 0}
+    - target: {fileID: 3166895801286242219, guid: bd0a306611837e247875183f10a30068,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3166895801286242217, guid: bd0a306611837e247875183f10a30068,
         type: 3}
       propertyPath: m_Sprite
@@ -2052,6 +2061,16 @@ PrefabInstance:
     - target: {fileID: 636964951, guid: bd0a306611837e247875183f10a30068, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3166895801199160901, guid: bd0a306611837e247875183f10a30068,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -59.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3166895801568982046, guid: bd0a306611837e247875183f10a30068,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 131
       objectReference: {fileID: 0}
     - target: {fileID: 6377971707671425307, guid: bd0a306611837e247875183f10a30068,
         type: 3}
