@@ -1472,6 +1472,11 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5022028173554956101, guid: fd6701f87736ebd4189fcf875818855f,
+        type: 3}
+      propertyPath: m_Mass
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd6701f87736ebd4189fcf875818855f, type: 3}
 --- !u!1001 &832335146
@@ -1964,6 +1969,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Size.y
       value: 1.2637422
+      objectReference: {fileID: 0}
+    - target: {fileID: 5022028173554956101, guid: fd6701f87736ebd4189fcf875818855f,
+        type: 3}
+      propertyPath: m_Mass
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd6701f87736ebd4189fcf875818855f, type: 3}
