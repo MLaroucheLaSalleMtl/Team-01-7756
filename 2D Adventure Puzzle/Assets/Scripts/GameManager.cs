@@ -48,10 +48,7 @@ public class GameManager : MonoBehaviour
                 PauseGame();
             }
         }
-        if (Input.GetKeyDown(KeyCode.C) || Input.GetKeyDown(KeyCode.JoystickButton2))
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        }
+      
     }
 
     public void PauseGame()
