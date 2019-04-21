@@ -15,6 +15,7 @@ public class ChestController : MonoBehaviour
     void Start()
     {
         anime = GetComponent<Animator>();
+        cupOfLife.SetActive(false);
     }
 
     // Update is called once per frame
@@ -38,8 +39,8 @@ public class ChestController : MonoBehaviour
     {
         anime.SetBool("PlayerReach", true);
         yield return new WaitForSeconds(1.5f);
-        chestEffect.SetActive(true);
         cupOfLife.SetActive(true);
+        chestEffect.SetActive(true);
         yield return new WaitForSeconds(3.5f);
         SceneManager.LoadScene(14);
     }
