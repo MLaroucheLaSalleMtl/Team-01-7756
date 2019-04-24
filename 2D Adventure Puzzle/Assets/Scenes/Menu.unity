@@ -2333,6 +2333,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EventSystem (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2807701502118703110, guid: 763ecc9b8f6a64446bc658755efab2e5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2807701502118703107, guid: 763ecc9b8f6a64446bc658755efab2e5,
         type: 3}
       propertyPath: m_LocalPosition.x
