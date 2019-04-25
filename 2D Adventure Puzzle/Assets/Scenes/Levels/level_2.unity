@@ -2663,6 +2663,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: StarSystem
       objectReference: {fileID: 0}
+    - target: {fileID: 2479085294401991898, guid: bd0a306611837e247875183f10a30068,
+        type: 3}
+      propertyPath: stageIndex
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6114379700092108754, guid: bd0a306611837e247875183f10a30068,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2786,7 +2791,7 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 636964948, guid: bd0a306611837e247875183f10a30068, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 9.14
+      value: 9.140015
       objectReference: {fileID: 0}
     - target: {fileID: 636964948, guid: bd0a306611837e247875183f10a30068, type: 3}
       propertyPath: m_SizeDelta.y
@@ -2821,6 +2826,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 120
       objectReference: {fileID: 0}
+    - target: {fileID: 2118123278690172799, guid: bd0a306611837e247875183f10a30068,
+        type: 3}
+      propertyPath: m_FirstSelected
+      value: 
+      objectReference: {fileID: 669683850}
     - target: {fileID: 636964949, guid: bd0a306611837e247875183f10a30068, type: 3}
       propertyPath: m_Color.a
       value: 0.25490198
@@ -2844,16 +2854,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Text
       value: Oh no...Someone dug a hole on the way!
-      objectReference: {fileID: 0}
-    - target: {fileID: 2118123278690172799, guid: bd0a306611837e247875183f10a30068,
-        type: 3}
-      propertyPath: m_FirstSelected
-      value: 
-      objectReference: {fileID: 669683850}
-    - target: {fileID: 2479085294401991898, guid: bd0a306611837e247875183f10a30068,
-        type: 3}
-      propertyPath: stageIndex
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1636267837, guid: bd0a306611837e247875183f10a30068, type: 3}
