@@ -155,6 +155,11 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 67.2
       objectReference: {fileID: 0}
+    - target: {fileID: 2136459681714327395, guid: d06d89e56f9cfa8409f2e26c11d7939d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -198
+      objectReference: {fileID: 0}
     - target: {fileID: 4161859605484042508, guid: d06d89e56f9cfa8409f2e26c11d7939d,
         type: 3}
       propertyPath: m_UpdateMode
@@ -301,6 +306,16 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 87.600006
       objectReference: {fileID: 0}
+    - target: {fileID: 5621874550680246890, guid: d06d89e56f9cfa8409f2e26c11d7939d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5621874550680246890, guid: d06d89e56f9cfa8409f2e26c11d7939d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 4230324691081476321, guid: d06d89e56f9cfa8409f2e26c11d7939d,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -377,6 +392,21 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0.9716981
       objectReference: {fileID: 0}
+    - target: {fileID: 9085154652859054119, guid: d06d89e56f9cfa8409f2e26c11d7939d,
+        type: 3}
+      propertyPath: m_Text
+      value: Press Key C or Button B to Continue..
+      objectReference: {fileID: 0}
+    - target: {fileID: 9085154652859054119, guid: d06d89e56f9cfa8409f2e26c11d7939d,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 9085154652859054119, guid: d06d89e56f9cfa8409f2e26c11d7939d,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4921933455970376307, guid: d06d89e56f9cfa8409f2e26c11d7939d,
         type: 3}
       propertyPath: m_Color.r
@@ -437,36 +467,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.b
       value: 0.9765041
-      objectReference: {fileID: 0}
-    - target: {fileID: 2136459681714327395, guid: d06d89e56f9cfa8409f2e26c11d7939d,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -198
-      objectReference: {fileID: 0}
-    - target: {fileID: 5621874550680246890, guid: d06d89e56f9cfa8409f2e26c11d7939d,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5621874550680246890, guid: d06d89e56f9cfa8409f2e26c11d7939d,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9085154652859054119, guid: d06d89e56f9cfa8409f2e26c11d7939d,
-        type: 3}
-      propertyPath: m_Text
-      value: Press Key C or Button X to Continue..
-      objectReference: {fileID: 0}
-    - target: {fileID: 9085154652859054119, guid: d06d89e56f9cfa8409f2e26c11d7939d,
-        type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 9085154652859054119, guid: d06d89e56f9cfa8409f2e26c11d7939d,
-        type: 3}
-      propertyPath: m_FontData.m_MinSize
-      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d06d89e56f9cfa8409f2e26c11d7939d, type: 3}
