@@ -22,7 +22,7 @@ public class ButtonOnOff : MonoBehaviour
     {
         if(collision.gameObject.tag == "box")
         {
-            obstacle.SetActive(!obstacle.gameObject.activeSelf);
+            obstacle.SetActive(false);
         }
     }
 
@@ -30,7 +30,7 @@ public class ButtonOnOff : MonoBehaviour
     {
         if (collision.gameObject.tag == "box")
         {
-            obstacle.SetActive(!obstacle.gameObject.activeSelf);
+            obstacle.SetActive(true);
         }
     }
 
